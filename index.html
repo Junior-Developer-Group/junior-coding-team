@@ -10,5 +10,23 @@
 
     <title>Junior Developer's Club</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <a href="#" class="logo">Logo</a>
+
+      <ul class="topnav">
+        <li><a href="#" class="active">Introduction</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team members</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Join us</a></li>
+      </ul>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
 </html>
