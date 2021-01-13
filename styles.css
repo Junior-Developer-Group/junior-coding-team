@@ -1,7 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap');
+
+/* Colours are stored as RGB numbers for easy access to opacity. To use, wrap them in either a RGB (for opacity at 1) or RGBA tag.
+Examples:
+    color: rgb(var(--dark-purple));
+    background-color: rgba(var(--orange), 0.5);
+*/
 :root {
-  --white: #fff8f0;
-  --sand: #f4d06f;
-  --orange: #ff8811;
-  --blue-green: #9dd9d2;
-  --dark-purple: #392f5a;
+  --white: 255, 248, 240;
+  --black: 30, 39, 44;
+  --sand: 244, 208, 111;
+  --orange: 255, 136, 17;
+  --blue-green: 157, 217, 210;
+  --dark-blue-green: 0, 128, 128;
+  --dark-purple: 57, 47, 90;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+header,
+footer {
+  font-family: 'Athiti', sans-serif;
+}
+
+a {
+  font-style: 1em;
+
+  transition-duration: 0.4s;
+  color: rgb(var(--dark-blue-green));
+}
+
+a:visited {
+  color: rgb(var(--dark-purple));
+}
+
+a:hover {
+  font-size: 1.1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  color: var(--dark-purple);
+
+  background-color: rgb(var(--white));
+  background-image: url(./topography.svg);
+
+  border: 1px solid rgb(var(--sand));
+}
+
+footer h1 {
+  font-size: 1.1em;
+  font-weight: 600;
+
+  color: rgb(var(--black));
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1em;
+  padding: 0.5em;
+
+  border-radius: 2em;
+
+  background-color: rgb(var(--white));
+}
+
+/* Remove all animations and transitions for people who prefer not to see them */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 37.5em) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* Extra-large devices */
+@media only screen and (min-width: 81.25em) {
+  footer {
+    justify-content: center;
+  }
+
+  footer section {
+    margin: 1em 5em;
+  }
 }
