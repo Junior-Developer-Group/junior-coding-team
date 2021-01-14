@@ -248,6 +248,46 @@ footer section {
   background-color: rgb(var(--white));
 }
 
+main{
+  color:white;
+  display:flex;
+  flex-direction:column;
+  /* margin-top:1.5em; */
+  margin-bottom:1.5em;
+  font-size:1.3em;
+  letter-spacing:2px;
+  background-color:#363636;
+}
+.main h1{
+  margin-left:0.5em;
+  margin-top:0.5em;
+  font-weight:400;
+
+}
+.main h2{
+  font-weight:400;
+}
+.main p{
+  line-height:35px;
+}
+.purpose{
+color:white;
+margin-top:1.5em;
+margin-left:0.5em;
+
+}
+.projects{
+  color:white;
+  margin-top:1.5em;
+  margin-left:0.5em;
+  margin-bottom:0.5em;
+ }
+.current-members{
+    color:white;
+    margin-top:1.5em;
+    margin-left:0.5em; 
+ }
+
 /* Remove all animations and transitions for people who prefer not to see them */
 @media screen and (prefers-reduced-motion: reduce) {
   * {
