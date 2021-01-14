@@ -39,5 +39,5 @@ const team_member = `
 `;
 
 window.onload = function () {
-  document.querySelector(".swiper-wrapper").innerHtml += team_member;
+  document.querySelector(".swiper-wrapper").innerHtml = team_member;
 };

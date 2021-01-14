@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
+
 :root {
   --white: 255, 248, 240;
   --black: 30, 39, 44;
@@ -8,9 +11,6 @@
   --dark-purple: 57, 47, 90;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +20,6 @@
 
 body {
   background: #171717;
-  min-height: 200vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .main-menu {
   position: fixed;
@@ -82,10 +78,53 @@ body {
   color: #171717;
 }
 
+#teamMembers {
+  margin: 0;
+  padding-top: 400px;
+}
+
+.teamMembers_heading {
+  background: #171717;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+#teamMembers h1 {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 55px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#teamMembers h1 span {
+  display: inline-flex;
+  color: #a1ff34;
+}
+#teamMembers h1 span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  color: #f5f5f5;
+  border-bottom: 1.8px solid #a1ff34;
+  letter-spacing: -1em;
+}
+#teamMembers h1:hover span:nth-child(even) {
+  letter-spacing: 0em;
+  transition-delay: 0.5s;
+}
+/* #teamMembers h1:hover span:nth-child(2) {
+  transition-delay: 1.5s;
+} */
 .team_members {
   position: relative;
   max-width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30vh;
 }
 
 .swiper-slide {
@@ -161,18 +200,18 @@ footer {
   font-family: "Athiti", sans-serif;
 }
 
-a {
+section a {
   font-style: 1em;
 
   transition-duration: 0.4s;
   color: rgb(var(--dark-blue-green));
 }
 
-a:visited {
+section a:visited {
   color: rgb(var(--dark-purple));
 }
 
-a:hover {
+section a:hover {
   font-size: 1.1em;
 }
 
