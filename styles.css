@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
 
 :root {
-  --white: 255, 248, 240;
-  --black: 30, 39, 44;
-  --sand: 244, 208, 111;
-  --orange: 255, 136, 17;
-  --blue-green: 157, 217, 210;
-  --dark-blue-green: 0, 128, 128;
-  --dark-purple: 57, 47, 90;
+  --white: #f5f5f5;
+  --black: #171717;
+  --dark-purple: #392f5a;
+  --blue: #03a9f4;
+  --dark-blue: #016492;
+  --pink: #e91ee3;
+  --green: #a1ff34;
 }
 
 * {
@@ -196,19 +195,15 @@ body {
   color: #fff;
 }
 
-footer {
-  font-family: "Athiti", sans-serif;
-}
-
 section a {
   font-style: 1em;
+  color: #016492;
 
   transition-duration: 0.4s;
-  color: rgb(var(--dark-blue-green));
 }
 
 section a:visited {
-  color: rgb(var(--dark-purple));
+  color: var(--dark-purple);
 }
 
 section a:hover {
@@ -220,19 +215,15 @@ footer {
   align-items: center;
   justify-content: space-around;
 
-  color: var(--dark-purple);
-
-  background-color: rgb(var(--white));
-  background-image: url(./topography.svg);
-
-  border: 1px solid rgb(var(--sand));
+  background-color: var(--white);
+  background-image: url(./Pattern-Randomized.svg);
 }
 
 footer h1 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 600;
 
-  color: rgb(var(--black));
+  color: var(--black);
 }
 
 footer section {
@@ -242,10 +233,11 @@ footer section {
 
   margin: 1em;
   padding: 0.5em;
+  line-height: 1.5em;
 
   border-radius: 2em;
 
-  background-color: rgb(var(--white));
+  background-color: var(--white);
 }
 
 main {
@@ -253,6 +245,9 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 16em;
+
+  /* margin-top:1.5em; */
+
   margin-bottom: 1.5em;
   font-size: 1.3em;
   letter-spacing: 2px;

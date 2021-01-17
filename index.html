@@ -24,7 +24,9 @@
     <!-- teamMembers.js -->
     <script src="./teamMembers.js"></script>
 
+
     <title>Junior Developer's Club</title>
+
   </head>
 
   <body>
@@ -34,11 +36,14 @@
       <ul class="topnav">
         <li><a href="#" class="active">Introduction</a></li>
         <li><a href="#">About</a></li>
+
         <li><a href="#teamMembers">Team members</a></li>
         <li><a href="#contact_us">Contact us</a></li>
+
         <li><a href="#">Join us</a></li>
       </ul>
     </nav>
+
 
     <!--Main Section-->
     <main class="main">
@@ -129,9 +134,12 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
+
 
     <!-- Contact Us Form -->
     <section id="contact_us">
@@ -194,7 +202,7 @@
       </div>
     </section>
 
-    
+
     <footer>
       <section>
         <h1>Important Links</h1>
@@ -219,6 +227,7 @@
       </section>
     </footer>
 
+
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script>
           // Make navBar Sticky
@@ -240,6 +249,10 @@
               modifier: 1,
               slideShadows: true,
             },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
             loop: true,
           });
         };
@@ -252,3 +265,4 @@
       </script>
     </body>
   </html>
+  
