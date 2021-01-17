@@ -79,7 +79,7 @@ body {
 
 #teamMembers {
   margin: 0;
-  padding-top: 400px;
+  padding-top: 40px;
 }
 
 .teamMembers_heading {
@@ -117,6 +117,8 @@ body {
   transition-delay: 1.5s;
 } */
 .team_members {
+  margin-left: 90px;
+  margin-right: 90px;
   position: relative;
   max-width: 100%;
   -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);

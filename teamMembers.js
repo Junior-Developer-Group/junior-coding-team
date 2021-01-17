@@ -1,9 +1,9 @@
 const Member = [
   {
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.",
-    name: "My Name 1",
-    speciality: "Speciality",
+      "Just A TEST I AM WORKING amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.",
+    name: "SAMMUEL MILLER",
+    speciality: "WEB DEVELOPMENT",
   },
   {
     about:
@@ -39,5 +39,5 @@ const team_member = `
 `;
 
 window.onload = function () {
-  document.querySelector(".swiper-wrapper").innerHtml = team_member;
+  document.querySelector(".swiper-wrapper").innerHtml += team_member;
 };
