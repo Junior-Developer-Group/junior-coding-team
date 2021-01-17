@@ -34,11 +34,32 @@
       <ul class="topnav">
         <li><a href="#" class="active">Introduction</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Team members</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#teamMembers">Team members</a></li>
+        <li><a href="#contact_us">Contact us</a></li>
         <li><a href="#">Join us</a></li>
       </ul>
     </nav>
+
+    <!--Main Section-->
+    <main class="main">
+      <h1>Junior Developer Group</h1>
+
+      <div class="purpose">
+        <h2>Team Purpose:</h2>
+        <p>
+          Learning and experimenting with the latest front end technologies as a
+          team - during a pandemic!.
+        </p>
+      </div>
+      <div class="current-members">
+        <h2>Current Number of members: 10</h2>
+        <p></p>
+      </div>
+      <div class="projects">
+        <h2>Current projects:</h2>
+        <p>We're currently building our very first one. Stay tuned!</p>
+      </div>
+    </main>
 
     <!-- Team Members -->
     <section id="teamMembers">
@@ -112,80 +133,68 @@
       </div>
     </section>
 
-    <!--Main Section-->
-    <main class="main">
-      <h1>Junior Developer Group</h1>
-
-      <div class="purpose">
-        <h2>Team Purpose:</h2>
-        <p>
-          Learning and experimenting with the latest front end technologies as a
-          team - during a pandemic!.
-        </p>
-      </div>
-      <div class="current-members">
-        <h2>Current Number of members: 10</h2>
-        <p></p>
-      </div>
-      <div class="projects">
-        <h2>Current projects:</h2>
-        <p>We're currently building our very first one. Stay tuned!</p>
-      </div>
-    </main>
-
-          <!-- Contact Us Form -->
-          <section id="contact_us">
-            <div class="contactUs_conatiner">
-              <h2>Contact Us</h2>
-              <div class="row100">
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required" />
-                    <span class="text">First Name</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required" />
-                    <span class="text">Last Name</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="row100">
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required" />
-                    <span class="text">Email</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="inputBox">
-                    <input type="text" name="" required="required" />
-                    <span class="text">Mobiles</span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-              </div>
-                <div class="row100">
-                  <div class="col">
-                    <div class="inputBox textarea">
-                      <textarea required="required"></textarea>
-                      <span class="text">Type your message Here...</span>
-                      <span class="line"></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row100">
-                  <div class="col">
-                    <input type="submit" value="Send" />
-                  </div>
-                </div>
+    <!-- Contact Us Form -->
+    <section id="contact_us">
+      <div class="contactUs_conatiner">
+        <h2>Contact Us</h2>
+        <form action="#">
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="text" id="required" name="" required="required" />
+              <span class="text">First Name *</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input id="notRequired" type="text" name=""/>
+              <span class="text">Last Name</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input id="required" type="email" name="" required="required" />
+              <span class="text">Email *</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input id="notRequired" type="text" name=""/>
+              <span class="text">Mobiles</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+          <div class="row100">
+            <div class="col">
+              <div class="inputBox textarea">
+                <textarea id="required" required="required"></textarea>
+                <span class="text">Type your message Here... *</span>
+                <span class="line"></span>
               </div>
             </div>
-          </section>
+          </div>
+          <div class="row100">
+            <div class="col">
+              <button id="submit_btn" type="submit" value="Send" onclick="return false">Submit</button>
+            </div>
+          </div>
+        </form>
+          <div class="row100">
+            <div class="col">
+              <span style="color: #fff;">* The fields are required</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
     <footer>
       <section>
         <h1>Important Links</h1>
@@ -234,6 +243,12 @@
             loop: true,
           });
         };
+        //Form Submission Button
+        $(document).ready(function(){
+        $("button").click(function(){
+          $("#submit_btn").toggleClass("active");
+        });
+      });
       </script>
     </body>
   </html>

@@ -248,45 +248,43 @@ footer section {
   background-color: rgb(var(--white));
 }
 
-main{
-  color:white;
-  display:flex;
-  flex-direction:column;
-  /* margin-top:1.5em; */
-  margin-bottom:1.5em;
-  font-size:1.3em;
-  letter-spacing:2px;
-  background-color:#363636;
+main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16em;
+  margin-bottom: 1.5em;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  background-color: #363636;
 }
-.main h1{
-  margin-left:0.5em;
-  margin-top:0.5em;
-  font-weight:400;
-
+.main h1 {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  font-weight: 400;
 }
-.main h2{
-  font-weight:400;
+.main h2 {
+  font-weight: 400;
 }
-.main p{
-  line-height:35px;
+.main p {
+  line-height: 35px;
 }
-.purpose{
-color:white;
-margin-top:1.5em;
-margin-left:0.5em;
-
+.purpose {
+  color: white;
+  margin-top: 1.5em;
+  margin-left: 0.5em;
 }
-.projects{
-  color:white;
-  margin-top:1.5em;
-  margin-left:0.5em;
-  margin-bottom:0.5em;
- }
-.current-members{
-    color:white;
-    margin-top:1.5em;
-    margin-left:0.5em; 
- }
+.projects {
+  color: white;
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+.current-members {
+  color: white;
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+}
 
 /* Remove all animations and transitions for people who prefer not to see them */
 @media screen and (prefers-reduced-motion: reduce) {
@@ -382,8 +380,12 @@ margin-left:0.5em;
   transition: 0.5s;
   pointer-events: none;
 }
-.contactUs_conatiner .row100 .inputBox input:focus + .text,
-.contactUs_conatiner .row100 .inputBox input:valid + .text {
+.contactUs_conatiner .row100 .inputBox #required:focus + .text,
+.contactUs_conatiner .row100 .inputBox #required:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+.contactUs_conatiner .row100 .inputBox #notRequired:focus + .text {
   top: -35px;
   left: -10px;
 }
@@ -398,10 +400,14 @@ margin-left:0.5em;
   border-radius: 2px;
   pointer-events: none;
 }
-.contactUs_conatiner .row100 .inputBox input:focus ~ .line,
-.contactUs_conatiner .row100 .inputBox input:valid ~ .line {
+.contactUs_conatiner .row100 .inputBox #required:focus ~ .line,
+.contactUs_conatiner .row100 .inputBox #required:valid ~ .line {
   height: 100%;
 }
+.contactUs_conatiner .row100 .inputBox #notRequired:focus ~ .line {
+  height: 100%;
+}
+
 .contactUs_conatiner .row100 .inputBox.textarea {
   position: relative;
   width: 100%;
@@ -421,12 +427,23 @@ margin-left:0.5em;
 .contactUs_conatiner .row100 .inputBox textarea:valid ~ .line {
   height: 100%;
 }
-.contactUs_conatiner input[type="submit"] {
+.contactUs_conatiner button[type="submit"] {
   border: none;
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
   background: #45f3ff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.contactUs_conatiner button[type="submit"].active {
+  content: "Submitted";
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #35c259;
   color: #000;
   font-size: 18px;
   border-radius: 2px;
