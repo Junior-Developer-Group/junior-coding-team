@@ -28,7 +28,9 @@
     <!-- teamMembers.js -->
     <script src="./teamMembers.js"></script>
 
-    <title>Junior Developer's Group</title>
+
+    <title>Junior Developer's Club</title>
+
   </head>
 
   <body>
@@ -38,83 +40,14 @@
       <ul class="topnav">
         <li><a href="#" class="active">Introduction</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Team members</a></li>
-        <li><a href="#">Contact us</a></li>
+
+        <li><a href="#teamMembers">Team members</a></li>
+        <li><a href="#contact_us">Contact us</a></li>
+
         <li><a href="#">Join us</a></li>
       </ul>
     </nav>
 
-    <!-- Team Members -->
-    <section id="teamMembers">
-      <h1 class="teamMembers_heading">
-        <span>T</span><span>eam</span> &nbsp;<span>M</span><span>embers</span>
-      </h1>
-      <div class="team_members">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- Team member 1 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
-                    consequat urna. Morbi a bibendum metus.
-                  </p>
-                  <div class="imgBx">
-                    <img src="./tm1.jpg" />
-                  </div>
-                  <div class="details">
-                    <h2>Name<br /><span> Quality </span></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Team member 2 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
-                    consequat urna. Morbi a bibendum metus.
-                  </p>
-                  <div class="imgBx">
-                    <img src="./tm1.jpg" />
-                  </div>
-                  <div class="details">
-                    <h2>Name<br /><span> Quality </span></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Team Member 3 -->
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
-                    consequat urna. Morbi a bibendum metus.
-                  </p>
-                  <div class="imgBx">
-                    <img src="./tm1.jpg" />
-                  </div>
-                  <div class="details">
-                    <h2>Name<br /><span> Quality </span></h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--Main Section-->
     <main class="main">
@@ -136,6 +69,135 @@
         <p>We're currently building our very first one. Stay tuned!</p>
       </div>
     </main>
+
+    <!-- Team Members -->
+    <section id="teamMembers">
+      <h1 class="teamMembers_heading">
+        <span>T</span><span>eam</span> &nbsp;<span>M</span><span>embers</span>
+      </h1>
+      <div class="team_members">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Team member 1 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
+                    consequat urna. Morbi a bibendum metus.
+                  </p>
+                  <div class="image-wrapper">
+                    <img src="./tm1.jpg" />
+                  </div>
+                  <div class="details">
+                    <h2>Name<br /><span> Quality </span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team member 2 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
+                    consequat urna. Morbi a bibendum metus.
+                  </p>
+                  <div class="image-wrapper">
+                    <img src="./tm1.jpg" />
+                  </div>
+                  <div class="details">
+                    <h2>Name<br /><span> Quality </span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque nisl eros, pulvinar facilisis justo mollis, auctor
+                    consequat urna. Morbi a bibendum metus.
+                  </p>
+                  <div class="image-wrapper">
+                    <img src="./tm1.jpg" />
+                  </div>
+                  <div class="details">
+                    <h2>Name<br /><span> Quality </span></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Us Form -->
+    <section id="contact_us">
+      <div class="contactUs_container">
+        <h2>Contact Us</h2>
+
+        <form action="#">
+
+           <!-- FIRST NAME --> 
+        <div class="form-group">
+          <div class="col">
+            <div class="input-box-wrapper">
+              <input type="text" id="required" name="" required />
+              <label class="text">First Name *</label>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+
+         <!-- EMAIL --> 
+        <div class="form-group">
+          <div class="col">
+            <div class="input-box-wrapper">
+              <input id="required" type="email" name="" required />
+              <label class="text">Email *</label>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+
+           <!-- SUBJECT --> 
+          <div class="form-group">
+            <div class="col">
+              <div class="input-box-wrapper textarea">
+                <textarea required></textarea>
+                <label class="text">Type your message Here... *</label>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+             <!-- SUBMIT BUTTON --> 
+          <div class="form-group">
+            <div class="col">
+              <button id="submit_btn" type="submit" value="Send" onclick="return false">Submit</button>
+              <span style="color: #fff;">* The fields are required</span>
+            </div>
+          </div>
+
+        </form>
+    
+        </div>
+      </div>
+    </section>
+
 
     <footer>
       <section>
@@ -161,31 +223,42 @@
       </section>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      // Make navBar Sticky
-      window.addEventListener('scroll', function () {
-        var header = document.querySelector('.main-menu');
-        header.classList.toggle('sticky', window.scrollY > 0);
-      });
 
-      //Swiper.js
-      window.onload = function () {
-        var swiper = new Swiper('.swiper-container', {
-          effect: 'coverflow',
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 0,
-            modifier: 1,
-            slideShadows: true
-          },
-          loop: true
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+          // Make navBar Sticky
+          window.addEventListener("scroll", function () {
+          var header = document.querySelector(".main-menu");
+          header.classList.toggle("sticky", window.scrollY > 0);
         });
-      };
-    </script>
-  </body>
-</html>
+        //Swiper.js
+        window.onload = function () {
+          var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+              slideShadows: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+          });
+        };
+        //Form Submission Button
+        $(document).ready(function(){
+        $("button").click(function(){
+          $("#submit_btn").toggleClass("active");
+        });
+      });
+      </script>
+    </body>
+  </html>
+  
