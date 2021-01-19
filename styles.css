@@ -331,14 +331,14 @@ main {
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
 }
-.contactUs_conatiner .row100 {
+.contactUs_conatiner .row {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.contactUs_conatiner .row100 .col {
+.contactUs_conatiner .row .col {
   position: relative;
   width: 100%;
   padding: 0 10px;
@@ -346,14 +346,14 @@ main {
   transition: 0.5s;
 }
 
-.contactUs_conatiner .row100 .inputBox {
+.contactUs_conatiner .row .inputBox {
   position: relative;
   width: 100%;
   height: 40px;
   color: #45f3ff;
 }
-.contactUs_conatiner .row100 .inputBox input,
-.contactUs_conatiner .row100 .inputBox.textarea textarea {
+.contactUs_conatiner .row .inputBox input,
+.contactUs_conatiner .row .inputBox.textarea textarea {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -366,7 +366,7 @@ main {
   z-index: 1;
   color: #000;
 }
-.contactUs_conatiner .row100 .inputBox .text {
+.contactUs_conatiner .row .inputBox .text {
   position: absolute;
   top: 0;
   left: 0;
@@ -377,16 +377,13 @@ main {
   transition: 0.5s;
   pointer-events: none;
 }
-.contactUs_conatiner .row100 .inputBox #required:focus + .text,
-.contactUs_conatiner .row100 .inputBox #required:valid + .text {
+.contactUs_conatiner .row .inputBox input:focus + .text,
+.contactUs_conatiner .row .inputBox input:valid + .text {
   top: -35px;
   left: -10px;
 }
-.contactUs_conatiner .row100 .inputBox #notRequired:focus + .text {
-  top: -35px;
-  left: -10px;
-}
-.contactUs_conatiner .row100 .inputBox .line {
+
+.contactUs_conatiner .row .inputBox .line {
   position: absolute;
   bottom: 0;
   display: block;
@@ -397,31 +394,28 @@ main {
   border-radius: 2px;
   pointer-events: none;
 }
-.contactUs_conatiner .row100 .inputBox #required:focus ~ .line,
-.contactUs_conatiner .row100 .inputBox #required:valid ~ .line {
-  height: 100%;
-}
-.contactUs_conatiner .row100 .inputBox #notRequired:focus ~ .line {
+.contactUs_conatiner .row .inputBox input:focus ~ .line,
+.contactUs_conatiner .row .inputBox input:valid ~ .line {
   height: 100%;
 }
 
-.contactUs_conatiner .row100 .inputBox.textarea {
+.contactUs_conatiner .row .inputBox.textarea {
   position: relative;
   width: 100%;
   height: 100px;
   padding: 10px 0;
 }
-.contactUs_conatiner .row100 .inputBox.textarea textarea {
+.contactUs_conatiner .row .inputBox.textarea textarea {
   height: 100%;
   resize: none;
 }
-.contactUs_conatiner .row100 .inputBox textarea:focus + .text,
-.contactUs_conatiner .row100 .inputBox textarea:valid + .text {
+.contactUs_conatiner .row .inputBox textarea:focus + .text,
+.contactUs_conatiner .row .inputBox textarea:valid + .text {
   top: -35px;
   left: -10px;
 }
-.contactUs_conatiner .row100 .inputBox textarea:focus ~ .line,
-.contactUs_conatiner .row100 .inputBox textarea:valid ~ .line {
+.contactUs_conatiner .row .inputBox textarea:focus ~ .line,
+.contactUs_conatiner .row .inputBox textarea:valid ~ .line {
   height: 100%;
 }
 .contactUs_conatiner button[type="submit"] {
