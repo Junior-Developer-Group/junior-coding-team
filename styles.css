@@ -35,6 +35,7 @@ body {
 .main-menu.sticky {
   padding: 5px 100px;
   background: #f5f5f5;
+  box-shadow: 0 0.5em 1em var(--black);
 }
 .main-menu .logo {
   position: relative;
@@ -206,7 +207,7 @@ section a:visited {
   color: var(--dark-purple);
 }
 
-section a:hover {
+footer section a:hover {
   font-size: 1.1em;
 }
 
@@ -250,15 +251,15 @@ main {
   letter-spacing: 2px;
   background-color: #363636;
 }
-.main h1 {
+main h1 {
   margin-left: 0.5em;
   margin-top: 0.5em;
   font-weight: 400;
 }
-.main h2 {
+main h2 {
   font-weight: 400;
 }
-.main p {
+main p {
   line-height: 35px;
 }
 .purpose {
@@ -278,6 +279,60 @@ main {
   margin-left: 0.5em;
 }
 
+#thanks-container {
+  margin-top: 5em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#thanks-container h1 {
+  margin-bottom: 1.5em;
+}
+
+.thanks-card {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: auto;
+
+  margin-bottom: 3em;
+
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 0.5em 2em 1em var(--black);
+}
+
+.thanks-text {
+  padding: 1.5em;
+}
+
+.thanks-card img {
+  max-width: 20em;
+  height: auto;
+}
+
+.thanks-card h2 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.thanks-card h3 {
+  font-size: 0.75em;
+  margin: 1em 0 0.5em;
+}
+
+.thanks-card p {
+  font-size: 0.75em;
+  line-height: 1.3em;
+}
+
+.thanks-card p {
+  margin-bottom: 1em;
+}
+
 /* Remove all animations and transitions for people who prefer not to see them */
 @media screen and (prefers-reduced-motion: reduce) {
   * {
@@ -288,10 +343,33 @@ main {
   }
 }
 
+/* Very small devices */
+@media only screen and (max-width: 20em) {
+  #thanks-container h1 {
+    font-size: 1.1em;
+  }
+}
+
 /* Small devices */
 @media only screen and (max-width: 37.5em) {
   footer {
     flex-wrap: wrap;
+  }
+
+  #thanks-container {
+    align-items: flex-start;
+  }
+
+  #thanks-container h1 {
+    align-self: center;
+  }
+
+  .thanks-card {
+    width: 100%;
+  }
+
+  .thanks-card img {
+    max-width: 100%;
   }
 }
 
