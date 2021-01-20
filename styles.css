@@ -196,47 +196,49 @@ margin-bottom: 40px;
 
 section a {
   font-style: 1em;
-  color: #016492;
-
+  color: var(--white);
+  text-decoration:none;
   transition-duration: 0.4s;
 }
 
 section a:visited {
-  color: var(--dark-purple);
+  color: var(--white);
 }
 
 section a:hover {
   font-size: 1.1em;
+  color:var(--blue);
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  background-color: var(--white);
-  background-image: url(./Pattern-Randomized.svg);
+  letter-spacing: 1.5px;
+  background-color:#363636;
+  color: var(--white);
+  /* background-color: var(--white);
+  background-image: url(./Pattern-Randomized.svg); */
 }
 
 footer h1 {
+  border-bottom: 1px var(--green) solid;
   font-size: 1.2em;
   font-weight: 600;
 
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 footer section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 1em;
   padding: 0.5em;
   line-height: 1.5em;
-
   border-radius: 2em;
 
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 .introduction--wrapper {
@@ -266,8 +268,18 @@ footer section {
 
 .purpose {
   color: var(--white) ;
+  margin-bottom:20px;
 }
 .purpose-title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.projects {
+  color: var(--white) ;
+  margin-bottom:20px;
+  
+}
+.projects-title {
   width: 100%;
   margin-bottom: 20px;
 }
