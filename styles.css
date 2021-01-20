@@ -21,7 +21,6 @@ body {
   background: #171717;
 }
 .main-menu {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -198,62 +197,77 @@ margin-bottom: 40px;
 
 section a {
   font-style: 1em;
-  color: #016492;
-
+  color: var(--white);
+  text-decoration:none;
   transition-duration: 0.4s;
 }
 
 section a:visited {
-  color: var(--dark-purple);
+  color: var(--white);
 }
 
 footer section a:hover {
   font-size: 1.1em;
+  color:var(--blue);
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  background-color: var(--white);
-  background-image: url(./Pattern-Randomized.svg);
+  letter-spacing: 1.5px;
+  background-color:#363636;
+  color: var(--white);
+  /* background-color: var(--white);
+  background-image: url(./Pattern-Randomized.svg); */
 }
 
 footer h1 {
+  border-bottom: 1px var(--green) solid;
   font-size: 1.2em;
   font-weight: 600;
+  margin-bottom: 10px;
 
-  color: var(--black);
+  /* color: var(--black); */
 }
 
 footer section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin: 1em;
   padding: 0.5em;
   line-height: 1.5em;
-
   border-radius: 2em;
 
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
-main {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  margin-top: 16em;
-
-  /* margin-top:1.5em; */
-
-  margin-bottom: 1.5em;
-  font-size: 1.3em;
-  letter-spacing: 2px;
+.introduction--wrapper {
   background-color: #363636;
+  width: 95%;
+  position: relative;
+  left: 60px;
+  top: 40px;
+  height: 450px;
 }
+
+.introduction {
+  padding:40px
+}
+.introduction--title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 45px;
+
+  color: var(--white) ;
+  width: 100%;
+  font-weight: 200;
+  border-bottom: 1px var(--green) solid;
+  line-height: 90px;
+}
+
 main h1 {
   margin-left: 0.5em;
   margin-top: 0.5em;
@@ -265,21 +279,23 @@ main h2 {
 main p {
   line-height: 35px;
 }
+
 .purpose {
-  color: white;
-  margin-top: 1.5em;
-  margin-left: 0.5em;
+  color: var(--white) ;
+  margin-bottom:20px;
+}
+.purpose-title {
+  width: 100%;
+  margin-bottom: 20px;
 }
 .projects {
-  color: white;
-  margin-top: 1.5em;
-  margin-left: 0.5em;
-  margin-bottom: 0.5em;
+  color: var(--white) ;
+  margin-bottom:20px;
+  
 }
-.current-members {
-  color: white;
-  margin-top: 1.5em;
-  margin-left: 0.5em;
+.projects-title {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #thanks-container {
@@ -516,4 +532,26 @@ main p {
   color: #171717;
   font-size: 18px;
   border-radius: 2px;
+}
+
+
+@media only screen and (max-width: 980px){
+  .introduction--title {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .introduction--title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .introduction--title {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
 }
