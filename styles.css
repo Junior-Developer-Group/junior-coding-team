@@ -8,6 +8,7 @@
   --dark-blue: #016492;
   --pink: #e91ee3;
   --green: #a1ff34;
+  --dark-gray: #616161;
 }
 
 * {
@@ -65,11 +66,38 @@ body {
   transition: 0.5s;
 }
 
-.topnav a:hover {
+.topnav a {
   padding: 6px 6px;
+}
+.topnav a:hover {
   border-radius: 5px;
   background-color: #f5f5f5;
   color: #171717;
+}
+
+@media only screen and (max-width: 989px) {
+  .main-menu ul {
+    font-size: 13px;
+  }
+}
+/* Small devices */
+@media only screen and (max-width: 767px) {
+  .main-menu ul {
+    height: 110px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .topnav a {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .main-menu ul {
+    height: 230px;
+    font-size: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .main-menu.sticky .logo,
@@ -78,8 +106,8 @@ body {
 }
 
 #teamMembers {
-margin-top: 40px;
-margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .teamMembers_heading {
@@ -316,7 +344,6 @@ main {
   background: #171717;
   margin-top: 40px;
   margin-bottom: 40px;
-
 }
 .contactUs_container {
   width: 90%;
@@ -363,7 +390,7 @@ main {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #f5f5f5;
+  color: #616161;
 }
 .contactUs_container .form-group .input-box-wrapper .text {
   position: absolute;
