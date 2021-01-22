@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 :root {
   --pure-white: #ffff;
@@ -9,19 +9,17 @@
   --dark-blue: #016492;
   --pink: #e91ee3;
   --green: #a1ff34;
-<<<<<<< HEAD
   --dark-gray: #616161;
-=======
+
   --light-grey: rgba(0, 0, 0, 0.2);
   --dark-grey: #363636;
->>>>>>> c679270e8ee9524164c124abd47736ba10145dce
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -126,7 +124,7 @@ body {
   height: 10vh;
 }
 #teamMembers h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--dark-grey);
   font-size: 55px;
   text-transform: uppercase;
@@ -454,7 +452,7 @@ main p {
   font-size: 36px;
   text-align: center;
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contactUs_container .form-group {
   position: relative;
@@ -489,11 +487,7 @@ main p {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-<<<<<<< HEAD
-  color: #616161;
-=======
-  color: var(--white);
->>>>>>> c679270e8ee9524164c124abd47736ba10145dce
+  color: var(--dark-gray);
 }
 .contactUs_container .form-group .input-box-wrapper .text {
   position: absolute;
@@ -548,7 +542,7 @@ main p {
 .contactUs_container .form-group .input-box-wrapper textarea:valid ~ .line {
   height: 100%;
 }
-.contactUs_container button[type='submit'] {
+.contactUs_container button[type="submit"] {
   border: none;
   padding: 7px 35px;
   cursor: pointer;
@@ -558,8 +552,8 @@ main p {
   font-size: 18px;
   border-radius: 2px;
 }
-.contactUs_container button[type='submit'].active {
-  content: 'Submitted';
+.contactUs_container button[type="submit"].active {
+  content: "Submitted";
   border: none;
   padding: 7px 35px;
   cursor: pointer;
