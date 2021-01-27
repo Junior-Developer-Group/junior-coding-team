@@ -571,11 +571,18 @@ main p {
   }
 }
 
-.contact {
+.contact-team-member {
   margin-top:25px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.contact a:hover{
-  font-size: 1.3em;
+.contact-team-member a:hover{
+  font-size: 1em;
   color:var(--blue);
+  font-weight: bold;
+  background-color: var(--white);
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px;
 }

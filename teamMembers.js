@@ -2,11 +2,11 @@ const Member = [
   {
     about:
       "I’m a junior dev with a couple of years of experience. I’m currently working with Vue, blogging and running a junior developer community. ",
-    name: "Likki",
-    speciality: "Junior Web Dev",
+    name: "Likii",
+    speciality: "Front-End Developer",
     image: "https://avatars1.githubusercontent.com/u/51357920?s=460&u=0c0ba2fa0b0f222dd9ceaf301a6e609ec6a6ca9a&v=4",
     social_links: {
-      github: "https://github.com/mateahoward", instagram: "https://www.instagram.com/likiipedia/", twitter: "https://twitter.com/Likiipedia",
+      github: "https://github.com/mateahoward", instagram: "https://www.instagram.com/likiipedia/", twitter: "https://twitter.com/Likiipedia", linkedin: "https://linkedin.com/in/matea-howard"
     },
     contact: "https://likiipedia.com/"
   },
@@ -60,8 +60,8 @@ for (members of Member) {
                     ${members.social_links.twitter ? `<span><a href= "${members.social_links.twitter}"<i class="fab fa-twitter fa-2x"></i></a></span>` : ''}
                     ${members.social_links.linkedin ? `<span><a href= "${members.social_links.linkedin}"<i class="fab fa-linkedin fa-2x"></i></a></span>` : ''}
                     </div>
-                  <div class="contact">
-                  ${members.contact ? `<a href="${members.contact}">Contact Me.</a` : ''}
+                  <div class="contact-team-member">
+                  ${members.contact ? `<a href="${members.contact}"> Visit Website 🖱️ </a` : ''}
                   </div>
                 </div>
             </div>
