@@ -419,6 +419,10 @@ main p {
   .thanks-card img {
     max-width: 100%;
   }
+
+  .main-menu img {
+    max-width: 75%;
+  }
 }
 
 /* Extra-large devices */
