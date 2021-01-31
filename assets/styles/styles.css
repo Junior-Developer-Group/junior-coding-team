@@ -324,7 +324,19 @@ main p {
 }
 
 #thanks-container h1 {
+  color: var(--white);
   margin-bottom: 1.5em;
+}
+
+#thanks-container a {
+  color: var(--dark-grey);
+}
+
+
+#thanks-container a:hover,
+#thanks-container a:visited {
+  color: var(--dark-purple);
+  font-weight: bold;
 }
 
 .thanks-card {
