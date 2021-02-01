@@ -39,14 +39,10 @@ body {
   background: var(--white);
   box-shadow: 0 0.5em 1em var(--black);
 }
-.main-menu .logo {
-  position: relative;
-  font-weight: 700;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.team-logo {
+  /*max-width: 75%; */
+  width: 85px;
+  height: 85px;
 }
 .main-menu ul {
   position: relative;
@@ -116,9 +112,7 @@ body {
   letter-spacing: 0em;
   transition-delay: 0.5s;
 }
-/* #teamMembers h1:hover span:nth-child(2) {
-  transition-delay: 1.5s;
-} */
+
 .team_members {
   margin-left: 90px;
   margin-right: 90px;
@@ -204,24 +198,20 @@ body {
   color: var(--pure-white);
 }
 .team_members .card .content .details h2{
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .team_members .card .content .social_links span{
-  align-items:center;
-  margin:8px;
-  
+  align-items: center;
+  margin: 8px;
 }
 
-section a {
+#teamMembers a,
+footer a {
   font-style: 1em;
   color: var(--white);
   text-decoration: none;
   transition-duration: 0.4s;
-}
-
-section a:visited {
-  color: var(--white);
 }
 
 footer section a:hover {
@@ -236,8 +226,6 @@ footer {
   letter-spacing: 1.5px;
   background-color: var(--dark-grey);
   color: var(--white);
-  /* background-color: var(--white);
-  background-image: url(./Pattern-Randomized.svg); */
 }
 
 footer h1 {
@@ -262,16 +250,17 @@ footer section {
 }
 
 .introduction--wrapper {
-  background-color: var(--dark-grey);
-  width: 95%;
-  position: relative;
-  left: 60px;
-  top: 40px;
-  height: 450px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .introduction {
+  width: 90%;
   padding: 40px;
+  background-color: var(--dark-grey);
 }
 .introduction--title {
   display: flex;
@@ -317,14 +306,25 @@ main p {
 
 #thanks-container {
   margin-top: 5em;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #thanks-container h1 {
+  color: var(--white);
   margin-bottom: 1.5em;
+}
+
+#thanks-container a {
+  color: var(--dark-grey);
+}
+
+
+#thanks-container a:hover,
+#thanks-container a:visited {
+  color: var(--dark-purple);
+  font-weight: bold;
 }
 
 .thanks-card {
@@ -369,56 +369,7 @@ main p {
   margin-bottom: 1em;
 }
 
-/* Remove all animations and transitions for people who prefer not to see them */
-@media screen and (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 
-/* Very small devices */
-@media only screen and (max-width: 20em) {
-  #thanks-container h1 {
-    font-size: 1.1em;
-  }
-}
-
-/* Small devices */
-@media only screen and (max-width: 37.5em) {
-  footer {
-    flex-wrap: wrap;
-  }
-
-  #thanks-container {
-    align-items: flex-start;
-  }
-
-  #thanks-container h1 {
-    align-self: center;
-  }
-
-  .thanks-card {
-    width: 100%;
-  }
-
-  .thanks-card img {
-    max-width: 100%;
-  }
-}
-
-/* Extra-large devices */
-@media only screen and (min-width: 81.25em) {
-  footer {
-    justify-content: center;
-  }
-
-  footer section {
-    margin: 1em 5em;
-  }
-}
 
 #contact_us {
   display: flex;
@@ -550,6 +501,24 @@ main p {
   border-radius: 2px;
 }
 
+.contact-team-member {
+  margin-top:25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#teamMembers .contact-team-member a:hover {
+  font-size: 1em;
+  color:var(--blue);
+  font-weight: bold;
+  background-color: var(--white);
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
 @media only screen and (max-width: 980px) {
   .introduction--title {
     font-size: 36px;
@@ -571,18 +540,57 @@ main p {
   }
 }
 
-.contact-team-member {
-  margin-top:25px;
-  font-weight: bold;
-  letter-spacing: 2px;
+/* Remove all animations and transitions for people who prefer not to see them */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
-.contact-team-member a:hover{
-  font-size: 1em;
-  color:var(--blue);
-  font-weight: bold;
-  background-color: var(--white);
-  height: 45px;
-  border-radius: 10px;
-  padding: 10px;
+/* Very small devices */
+@media only screen and (max-width: 20em) {
+  #thanks-container h1 {
+    font-size: 1.1em;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 37.5em) {
+  footer {
+    flex-wrap: wrap;
+  }
+
+  #thanks-container {
+    align-items: flex-start;
+  }
+
+  #thanks-container h1 {
+    align-self: center;
+  }
+
+  .thanks-card {
+    width: 100%;
+  }
+
+  .thanks-card img {
+    max-width: 100%;
+  }
+
+  .main-menu img {
+    max-width: 75%;
+  }
+}
+
+/* Extra-large devices */
+@media only screen and (min-width: 81.25em) {
+  footer {
+    justify-content: center;
+  }
+
+  footer section {
+    margin: 1em 5em;
+  }
 }
