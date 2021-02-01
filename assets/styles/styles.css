@@ -39,14 +39,10 @@ body {
   background: var(--white);
   box-shadow: 0 0.5em 1em var(--black);
 }
-.main-menu .logo {
-  position: relative;
-  font-weight: 700;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.team-logo {
+  /*max-width: 75%; */
+  width: 85px;
+  height: 85px;
 }
 .main-menu ul {
   position: relative;
