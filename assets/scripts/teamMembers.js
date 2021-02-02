@@ -72,3 +72,40 @@ for (members of Member) {
   document.querySelector(".swiper-wrapper").innerHTML += team_member;
 };
 
+// Use scrollY effect
+window.addEventListener("scroll", function () {
+  var header = document.querySelector(".main-menu");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+
+//Swiper.js
+window.onload = function () {
+  var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: false,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 1,
+      slideShadows: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // loop: true,
+  });
+};
+
+//Form Submission Button
+$(document).ready(function () {
+  $("button").click(function () {
+    $("#submit_btn").toggleClass("active");
+  });
+});
+
+
