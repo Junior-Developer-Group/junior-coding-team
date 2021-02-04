@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 :root {
   --pure-white: #ffff;
   --white: #f5f5f5;
@@ -9,8 +8,6 @@
   --dark-blue: #016492;
   --pink: #e91ee3;
   --green: #a1ff34;
-  --dark-gray: #616161;
-
   --light-grey: rgba(0, 0, 0, 0.2);
   --dark-grey: #363636;
 }
@@ -19,48 +16,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   background: var(--black);
 }
+
 .main-menu {
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 20px 100px;
   z-index: 100;
 }
+
+.header {
+  position: fixed;
+}
+
 .main-menu.sticky {
   padding: 5px 100px;
   background: var(--white);
   box-shadow: 0 0.5em 1em var(--black);
 }
-.main-menu .logo {
-  position: relative;
-  font-weight: 700;
+
+.navbar-toggle {
+  padding-top: 10px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
   color: var(--white);
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-size: 24px;
+  display: none;
 }
-.main-menu ul {
+
+.main-menu.sticky .navbar-toggle {
+  color: var(--black);
+}
+
+.team-logo {
+  /*max-width: 75%; */
+  width: 85px;
+  height: 85px;
+}
+
+/* .topnav {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main-menu ul li {
-  position: relative;
+} */
+
+.topnav li {
+  position: rela;
   list-style: none;
 }
-.main-menu ul li a {
+
+.topnav li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -70,43 +90,59 @@ body {
   transition: 0.5s;
 }
 
-.topnav a {
-  padding: 6px 6px;
-}
 .topnav a:hover {
+  padding: 6px 6px;
   border-radius: 5px;
   background-color: var(--white);
   color: var(--black);
 }
 
-@media only screen and (max-width: 989px) {
-  .main-menu ul {
-    font-size: 13px;
-  }
-}
-/* Small devices */
-@media only screen and (max-width: 767px) {
-  .main-menu ul {
-    height: 110px;
-    flex-direction: column;
-    text-align: center;
-  }
-  .topnav a {
-    padding: 10px;
-  }
-}
-@media only screen and (max-width: 495px) {
-  .main-menu ul {
-    height: 230px;
-    font-size: 10px;
-    flex-direction: column;
-    text-align: center;
-  }
+.main-menu.sticky .topnav a:hover {
+  background-color: var(--black);
+  color: var(--white);
 }
 
-.main-menu.sticky .logo,
-.main-menu.sticky ul li a {
+.main-menu.sticky .logo, .main-menu.sticky ul li a {
   color: var(--black);
+}
+
+.topnav {
+  display:block;
+  display: flex;
+  margin-right: 30px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu {
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .main-menu.sticky {
+    padding: 5px 10px;
+  }
+  .topnav li {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .topnav {
+    display: none;
+    background-color: var(--black);
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .main-menu.sticky .topnav{
+    background-color: var(--white);
+
+  }
+  .navbar-toggle {
+    display: block;
+  }
 }
 
 #teamMembers {
@@ -123,17 +159,20 @@ body {
   align-items: center;
   height: 10vh;
 }
+
 #teamMembers h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--dark-grey);
   font-size: 55px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 #teamMembers h1 span {
   display: inline-flex;
   color: var(--green);
 }
+
 #teamMembers h1 span:nth-child(even) {
   overflow: hidden;
   transition: ease-in-out 0.5s;
@@ -141,13 +180,12 @@ body {
   border-bottom: 1.8px solid var(--green);
   letter-spacing: -1em;
 }
+
 #teamMembers h1:hover span:nth-child(even) {
   letter-spacing: 0em;
   transition-delay: 0.5s;
 }
-/* #teamMembers h1:hover span:nth-child(2) {
-  transition-delay: 1.5s;
-} */
+
 .team_members {
   margin-left: 90px;
   margin-right: 90px;
@@ -162,25 +200,27 @@ body {
   background-position: center;
   background-size: cover;
   width: 350px;
-  min-height: 350px;
+  height: auto;
+  /* min-height: 350px; */
   margin: 0 20px;
   background: var(--pure-white);
 }
 
-.swiper-container-3d .swiper-slide-shadow-left,
-.swiper-container-3d .swiper-slide-shadow-left {
+.swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-left {
   background-image: none;
 }
 
 .team_members .card {
   position: relative;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   background: var(--dark-grey);
   padding: 60px 40px;
   text-align: center;
   overflow: hidden;
 }
+
 .team_members .card .layer {
   position: absolute;
   top: calc(100% - 2px);
@@ -191,19 +231,23 @@ body {
   z-index: 1;
   transition: 0.5s;
 }
+
 .team_members .card:hover .layer {
   top: 0;
 }
+
 .team_members .card .content {
   position: relative;
   z-index: 2;
 }
+
 .team_members .card .content p {
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 20px;
   color: var(--pure-white);
 }
+
 .team_members .card .content .image-wrapper {
   width: 100px;
   height: 100px;
@@ -214,28 +258,41 @@ body {
   box-shadow: 0 10px 20px var(--light-grey);
 }
 
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .team_members .card .content h2 {
   font-size: 18px;
   color: var(--pure-white);
 }
+
 .team_members .card .content h2 span {
   font-size: 14px;
   color: var(--blue);
   transition: 0.5s;
 }
+
 .team_members .card:hover .content h2 span {
   color: var(--pure-white);
 }
 
-section a {
+.team_members .card .content .details h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.team_members .card .content .social_links span {
+  align-items: center;
+  margin: 8px;
+}
+
+#teamMembers a, footer a {
   font-style: 1em;
   color: var(--white);
   text-decoration: none;
   transition-duration: 0.4s;
-}
-
-section a:visited {
-  color: var(--white);
 }
 
 footer section a:hover {
@@ -250,8 +307,6 @@ footer {
   letter-spacing: 1.5px;
   background-color: var(--dark-grey);
   color: var(--white);
-  /* background-color: var(--white);
-  background-image: url(./Pattern-Randomized.svg); */
 }
 
 footer h1 {
@@ -259,7 +314,6 @@ footer h1 {
   font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 10px;
-
   /* color: var(--black); */
 }
 
@@ -271,28 +325,35 @@ footer section {
   padding: 0.5em;
   line-height: 1.5em;
   border-radius: 2em;
-
   /* background-color: var(--white); */
 }
 
 .introduction--wrapper {
-  background-color: var(--dark-grey);
-  width: 95%;
-  position: relative;
-  left: 60px;
-  top: 40px;
-  height: 450px;
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .introduction--wrapper {
+    margin-top: 130px;
+  }
 }
 
 .introduction {
+  width: 90%;
   padding: 40px;
+  background-color: var(--dark-grey);
 }
+
 .introduction--title {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   font-size: 45px;
-
   color: var(--white);
   width: 100%;
   font-weight: 200;
@@ -305,9 +366,11 @@ main h1 {
   margin-top: 0.5em;
   font-weight: 400;
 }
+
 main h2 {
   font-weight: 400;
 }
+
 main p {
   line-height: 35px;
 }
@@ -316,14 +379,17 @@ main p {
   color: var(--white);
   margin-bottom: 20px;
 }
+
 .purpose-title {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .projects {
   color: var(--white);
   margin-bottom: 20px;
 }
+
 .projects-title {
   width: 100%;
   margin-bottom: 20px;
@@ -331,14 +397,23 @@ main p {
 
 #thanks-container {
   margin-top: 5em;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #thanks-container h1 {
+  color: var(--white);
   margin-bottom: 1.5em;
+}
+
+#thanks-container a {
+  color: var(--dark-grey);
+}
+
+#thanks-container a:hover, #thanks-container a:visited {
+  color: var(--dark-purple);
+  font-weight: bold;
 }
 
 .thanks-card {
@@ -346,9 +421,7 @@ main p {
   flex-direction: column;
   width: 20em;
   height: auto;
-
   margin-bottom: 3em;
-
   color: var(--black);
   background-color: var(--white);
   box-shadow: 0.5em 2em 1em var(--black);
@@ -383,57 +456,6 @@ main p {
   margin-bottom: 1em;
 }
 
-/* Remove all animations and transitions for people who prefer not to see them */
-@media screen and (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Very small devices */
-@media only screen and (max-width: 20em) {
-  #thanks-container h1 {
-    font-size: 1.1em;
-  }
-}
-
-/* Small devices */
-@media only screen and (max-width: 37.5em) {
-  footer {
-    flex-wrap: wrap;
-  }
-
-  #thanks-container {
-    align-items: flex-start;
-  }
-
-  #thanks-container h1 {
-    align-self: center;
-  }
-
-  .thanks-card {
-    width: 100%;
-  }
-
-  .thanks-card img {
-    max-width: 100%;
-  }
-}
-
-/* Extra-large devices */
-@media only screen and (min-width: 81.25em) {
-  footer {
-    justify-content: center;
-  }
-
-  footer section {
-    margin: 1em 5em;
-  }
-}
-
 #contact_us {
   display: flex;
   justify-content: center;
@@ -442,18 +464,21 @@ main p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
 .contactUs_container {
   width: 90%;
   padding: 20px;
 }
+
 .contactUs_container h2 {
   width: 100%;
   color: var(--green);
   font-size: 36px;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 .contactUs_container .form-group {
   position: relative;
   width: 100%;
@@ -475,8 +500,8 @@ main p {
   height: 40px;
   color: var(--green);
 }
-.contactUs_container .form-group .input-box-wrapper input,
-.contactUs_container .form-group .input-box-wrapper.textarea textarea {
+
+.contactUs_container .form-group .input-box-wrapper input, .contactUs_container .form-group .input-box-wrapper.textarea textarea {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -487,8 +512,9 @@ main p {
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: var(--dark-gray);
+  color: var(--dark-grey);
 }
+
 .contactUs_container .form-group .input-box-wrapper .text {
   position: absolute;
   top: 0;
@@ -500,8 +526,8 @@ main p {
   transition: 0.5s;
   pointer-events: none;
 }
-.contactUs_container .form-group .input-box-wrapper input:focus + .text,
-.contactUs_container .form-group .input-box-wrapper input:valid + .text {
+
+.contactUs_container .form-group .input-box-wrapper input:focus+.text, .contactUs_container .form-group .input-box-wrapper input:valid+.text {
   top: -35px;
   left: -10px;
 }
@@ -518,8 +544,8 @@ main p {
   pointer-events: none;
   color: var(--black);
 }
-.contactUs_container .form-group .input-box-wrapper input:focus ~ .line,
-.contactUs_container .form-group .input-box-wrapper input:valid ~ .line {
+
+.contactUs_container .form-group .input-box-wrapper input:focus~.line, .contactUs_container .form-group .input-box-wrapper input:valid~.line {
   height: 100%;
 }
 
@@ -529,20 +555,22 @@ main p {
   height: 100px;
   padding: 10px 0;
 }
+
 .contactUs_container .form-group .input-box-wrapper.textarea textarea {
   height: 100%;
   resize: none;
 }
-.contactUs_container .form-group .input-box-wrapper textarea:focus + .text,
-.contactUs_container .form-group .input-box-wrapper textarea:valid + .text {
+
+.contactUs_container .form-group .input-box-wrapper textarea:focus+.text, .contactUs_container .form-group .input-box-wrapper textarea:valid+.text {
   top: -35px;
   left: -10px;
 }
-.contactUs_container .form-group .input-box-wrapper textarea:focus ~ .line,
-.contactUs_container .form-group .input-box-wrapper textarea:valid ~ .line {
+
+.contactUs_container .form-group .input-box-wrapper textarea:focus~.line, .contactUs_container .form-group .input-box-wrapper textarea:valid~.line {
   height: 100%;
 }
-.contactUs_container button[type="submit"] {
+
+.contactUs_container button[type='submit'] {
   border: none;
   padding: 7px 35px;
   cursor: pointer;
@@ -552,8 +580,9 @@ main p {
   font-size: 18px;
   border-radius: 2px;
 }
-.contactUs_container button[type="submit"].active {
-  content: "Submitted";
+
+.contactUs_container button[type='submit'].active {
+  content: 'Submitted';
   border: none;
   padding: 7px 35px;
   cursor: pointer;
@@ -562,6 +591,22 @@ main p {
   color: var(--black);
   font-size: 18px;
   border-radius: 2px;
+}
+
+.contact-team-member {
+  margin-top: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#teamMembers .contact-team-member a:hover {
+  font-size: 1em;
+  color: var(--blue);
+  font-weight: bold;
+  background-color: var(--white);
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 980px) {
@@ -582,5 +627,58 @@ main p {
   .introduction--title {
     font-size: 16px;
     margin-bottom: 35px;
+  }
+}
+
+/* Remove all animations and transitions for people who prefer not to see them */
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Very small devices */
+
+@media only screen and (max-width: 20em) {
+  #thanks-container h1 {
+    font-size: 1.1em;
+  }
+}
+
+/* Small devices */
+
+@media only screen and (max-width: 37.5em) {
+  footer {
+    flex-wrap: wrap;
+  }
+  #thanks-container {
+    align-items: flex-start;
+  }
+  #thanks-container h1 {
+    align-self: center;
+  }
+  .thanks-card {
+    width: 100%;
+  }
+  .thanks-card img {
+    max-width: 100%;
+  }
+  .main-menu img {
+    max-width: 75%;
+  }
+}
+
+/* Extra-large devices */
+
+@media only screen and (min-width: 81.25em) {
+  footer {
+    justify-content: center;
+  }
+  footer section {
+    margin: 1em 5em;
   }
 }
