@@ -26,20 +26,25 @@
 
 <body>
   <!-- Nav Bar -->
-  <nav class="main-menu">
-    <img class='team-logo' src="./assets/images/jdgLogoFinal_withBackground.svg" alt="Logo">
-    <ul class="topnav">
-      <li><a href="#" class="active">Introduction</a></li>
-      <li><a href="#">About</a></li>
+  <header>
+    <nav class="main-menu">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fa fa-bars" id="btn"></i>
+      </span>
+      <img class='team-logo' src="./assets/images/jdgLogoFinal_withBackground.svg" alt="Logo">
+      <ul class="topnav" id="js-menu">
+        <li><a href="#introduction" class="active" id="1">Introduction</a></li>
+        <li><a href="#" id="2">About</a></li>
 
-      <li><a href="#teamMembers">Team members</a></li>
-      <li><a href="#contact_us">Contact us</a></li>
+        <li><a href="#teamMembers" id="3">Team members</a></li>
+        <li><a href="#contact_us" id="4">Contact us</a></li>
 
-      <li><a href="#">Join us</a></li>
-    </ul>
-  </nav>
+        <li><a href="#" id="5">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="introduction--wrapper">
+  <section class="introduction--wrapper" id="introduction">
     <div class="introduction">
       <div class="introduction--title">
         <h1>Junior Developer Group</h1>
@@ -164,7 +169,7 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/scripts/teamMembers.js"></script>
-
+  <script src="./assets/scripts/nav.js"></script>
 </body>
 
 </html>
