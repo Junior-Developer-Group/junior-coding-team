@@ -79,7 +79,8 @@ main p {
 }
 
 .main-menu ul li a {
-  margin: 0 1em;
+  margin-left:2em;
+  margin-right: 0;
 
   color: var(--white);
   letter-spacing: 2px;
