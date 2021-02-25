@@ -10,6 +10,7 @@ const Member = [
     },
     contact: "https://likiipedia.com/"
   },
+
   {
     about:
       "I’m a CTO with experience working in, leading and managing development teams. I code primarily in Golang, and enjoy mentoring junior developers.",
@@ -38,24 +39,12 @@ const Member = [
     social_links: { github: "https://github.com/Denice-S", linkedin: "https://linkedin.com/in/denice-soper" },
     contact: "",
   },
-  {
-    about:
-      "I’m a first year CSE student with skills of full stack development and competitive coding.  Currently using my skills in real world application.",
-    name: "Aditya Rawat",
-    speciality: "Junior full stack developer and a competitive programmer.",
-    image: "https://avatars.githubusercontent.com/u/63283520?s=400&u=ac02db46965d8cf2c6851582ef2baee5bc737dc1&v=4",
-    social_links: { github: "https://github.com/CS-Aditya-Rawat", twitter: "https://twitter.com/CsAdityaRawat", instagram: "https://www.instagram.com/aditya_adiii_/", linkedin: "https://www.linkedin.com/in/cs-aditya-rawat/" },
-    contact: "",
-  },
 
 ];
 
 for (members of Member) {
   const team_member = `
-    <div class="swiper-slide">
-        <div class="card ">
-            <div class="layer"></div>
-                <div class="content">
+                <div class="team-card">
                     <p>
                     ${members.about}
                     </p>
@@ -73,13 +62,10 @@ for (members of Member) {
                   <div class="contact-team-member">
                   ${members.contact ? `<a href="${members.contact}"> Visit Website 🖱️ </a` : ''}
                   </div>
-                </div>
-            </div>
-        </div>
     </div>
 `;
 
-  document.querySelector(".swiper-wrapper").innerHTML += team_member;
+  document.querySelector(".team-card-wrapper").innerHTML += team_member;
 };
 
 // Use scrollY effect
@@ -89,33 +75,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-//Swiper.js
-window.onload = function () {
-  var swiper = new Swiper(".swiper-container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: false,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 0,
-      modifier: 1,
-      slideShadows: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    // loop: true,
-  });
-};
 
-//Form Submission Button
-$(document).ready(function () {
-  $("button").click(function () {
-    $("#submit_btn").toggleClass("active");
-  });
-});
 
 
