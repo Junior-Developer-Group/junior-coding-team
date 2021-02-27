@@ -161,7 +161,7 @@ main p {
   height:auto;
   width: auto;
   display: flex;
-  align-content: space-between;
+  align-content:center;
   justify-content: space-between;
   flex-wrap:wrap;
   color: var(--white);
@@ -225,6 +225,7 @@ main p {
   align-items: flex-end;
   margin: 0.5em;
   color: var(--white);
+  text-decoration: none;
 
 }
 .contact-team-member a{
@@ -433,3 +434,75 @@ footer section a:hover {
     margin: 1em 5em;
   }
 }
+
+
+/* Introduction section */
+
+.projects--wrapper {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width: 100%;
+  align-content: center;
+  margin-top: 1.5em;
+}
+
+.projects--title {
+  text-align:center;
+  padding: 2.5em;
+  background-color: var(--dark-grey);
+  width: 90%;
+  font-size: 1.5em;
+  font-weight: 200;
+  line-height: 2em;
+  
+}
+.projects--title h1{
+  border-bottom: 1px var(--green) solid;
+}
+
+.projects {
+  width: 90%;
+  padding: 2.5em;
+  background-color: var(--dark-grey);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.sleep-quality img{
+  height:auto;
+  width: 100%;
+ max-width:24.5em;
+  
+}
+
+.sleep-quality p{
+  margin:1.5em 1.5em;
+}
+
+.sleep-quality {
+  display:inline-block;
+  margin:2em;
+  text-align:center;
+}
+
+.tamagotchi img{
+  height:auto;
+  width: 100%;
+ max-width:24.5em;
+ border-radius:0.4em;
+}
+
+.tamagotchi{
+  display:inline-block;
+  text-align:center;
+  margin:2em;
+}
+.tamagotchi p{
+  margin:1.5em 1.5em;
+
+}
+
+
