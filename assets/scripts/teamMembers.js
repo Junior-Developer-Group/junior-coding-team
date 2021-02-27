@@ -77,4 +77,14 @@ window.addEventListener("scroll", function () {
 
 
 
+//Responsive navbar 
+const responsiveNavbar = () => {
+  const navBar = document.getElementById("main-menu");
+  (navBar.className === "main-menu")
+  ?
+  navBar.className += " responsive"
+  :
+  navBar.className = "main-menu";
+}
+
 
