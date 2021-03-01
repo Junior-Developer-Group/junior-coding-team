@@ -133,16 +133,86 @@ main p {
 }
 
 .purpose,
-.purpose-title,
-.projects,
-.projects-title {
+.purpose-title {
   margin-bottom: 1.25em;
+} 
+
+.purpose-title {
+  width: 100%;
+} 
+
+/* projects section */
+
+.projects--wrapper {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  width: 100%;
+  align-content: center;
+  margin-top: 1.5em;
 }
 
-.purpose-title,
-.projects-title {
-  width: 100%;
+.projects--title {
+  text-align:center;
+  padding: 1.5em;
+  background-color: var(--dark-grey);
+  width: 90%;
+  font-size: 1.8em;
+  line-height: 2em;
+  
 }
+.projects--title h1{
+  border-bottom: 1px var(--green) solid;
+}
+
+.projects {
+  width: 90%;
+  padding: 1.5em;
+  background-color: var(--dark-grey);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+}
+
+.sleep-quality img{
+  height:100%;
+  width: 100%;
+  max-height:18em;
+ max-width:26em;
+ border-radius:0.4em;
+ /* object-fit: cover; */
+}
+
+.sleep-quality p{
+  margin:1.5em 1.5em;
+}
+
+.sleep-quality {
+  display:inline-block;
+  margin:2em;
+  text-align:center;
+}
+
+.tamagotchi img{
+  height:100%;
+  width: 100%;
+  max-height:18em;
+ max-width:26em;
+ border-radius:0.4em;
+ /* object-fit: cover; */
+}
+
+.tamagotchi{
+  display:inline-block;
+  margin:2em;
+  text-align:center;
+}
+.tamagotchi p{
+  margin:1.5em 1.5em;
+
+}
+
 
 /* Team members h1 header */
 
@@ -167,7 +237,7 @@ main p {
   width: auto;
   display: flex;
   align-content:center;
-  justify-content: space-between;
+  justify-content:center;
   flex-wrap:wrap;
   color: var(--white);
   font-size: 1.1em;
@@ -478,73 +548,5 @@ footer section a:hover {
 }
 
 
-/* Introduction section */
-
-.projects--wrapper {
-  display: flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  width: 100%;
-  align-content: center;
-  margin-top: 1.5em;
-}
-
-.projects--title {
-  text-align:center;
-  padding: 2.5em;
-  background-color: var(--dark-grey);
-  width: 90%;
-  font-size: 1.5em;
-  font-weight: 200;
-  line-height: 2em;
-  
-}
-.projects--title h1{
-  border-bottom: 1px var(--green) solid;
-}
-
-.projects {
-  width: 90%;
-  padding: 2.5em;
-  background-color: var(--dark-grey);
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.sleep-quality img{
-  height:auto;
-  width: 100%;
- max-width:24.5em;
-  
-}
-
-.sleep-quality p{
-  margin:1.5em 1.5em;
-}
-
-.sleep-quality {
-  display:inline-block;
-  margin:2em;
-  text-align:center;
-}
-
-.tamagotchi img{
-  height:auto;
-  width: 100%;
- max-width:24.5em;
- border-radius:0.4em;
-}
-
-.tamagotchi{
-  display:inline-block;
-  text-align:center;
-  margin:2em;
-}
-.tamagotchi p{
-  margin:1.5em 1.5em;
-
-}
 
 
