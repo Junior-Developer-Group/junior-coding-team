@@ -81,10 +81,25 @@ window.addEventListener("scroll", function () {
 const responsiveNavbar = () => {
   const navBar = document.getElementById("main-menu");
   (navBar.className === "main-menu")
-  ?
-  navBar.className += " responsive"
-  :
-  navBar.className = "main-menu";
+    ?
+    navBar.className += " responsive"
+    :
+    navBar.className = "main-menu";
 }
 
+//"Join us" modal pop up open and close 
+let modal = document.querySelector(".modal")
+document.getElementById("modal-link").addEventListener("click", () => {
+  modal.style.display = "block"
+})
+
+document.querySelector(".close").addEventListener("click", () => {
+  modal.style.display = "none"
+})
+
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none"
+  }
+});
 
