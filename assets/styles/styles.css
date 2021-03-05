@@ -181,7 +181,7 @@ main p {
   max-height:18em;
  max-width:26em;
  border-radius:0.4em;
- /* object-fit: cover; */
+
 }
 
 .sleep-quality p{
@@ -200,7 +200,7 @@ main p {
   max-height:18em;
  max-width:26em;
  border-radius:0.4em;
- /* object-fit: cover; */
+
 }
 
 .tamagotchi{
@@ -547,6 +547,76 @@ footer section a:hover {
   }
 }
 
+/* Styles for the modal pop on "Join Us" on the navbar"*/
+.modal {
+  display: none;
+  position: fixed; 
+  padding-top:3em;
+  left: 0; 
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
+
+}
+.modal-content {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  border-radius:0.3em;
+  text-align:center;
+  background-color:var(--very-light-grey);
+  padding: 1.5em; 
+  margin: auto; 
+  width:50%;
+}
+.modal-content h2{
+  width:100%;
+  text-align:center;
+  
+}
+
+.modal-content span{
+  width:100%;
+  margin-left:94%;
+  
+}
+.modal-content p{
+  margin:1.8em 0.8em;
+  width:100%;
+  letter-spacing: 0.1em;
+}
+.modal-content button{
+  text-align:center;
+  text-decoration:none;
+  color:var(--white);
+  background-color: var(--very-light-grey);
+  padding:0.8em 2em;
+  margin:auto;
+  font-size:0.7em;
+  border-radius: 0.3em;
+  border:0.1em solid var(--green);
+  
+}
+.modal-content a{
+  text-decoration:none;
+  font-size:1.5em;
+  color:var(--white);
+}
+
+.modal-content button:hover{
+  border: 0.3em solid var(--green);
+  margin:-0.196em;;
+}
+.close {
+  width:50%;
+  color: var(--green); 
+  font-size: 2em;  
+  font-weight: bold;
+  cursor: pointer;
+}
 
 
 
