@@ -118,7 +118,12 @@ $(document).ready(function () {
   });
 });
 
+
 //Responsive navbar 
+window.onload = function () {
+  document.getElementById("icon").addEventListener('click', responsiveNavbar);
+}
+
 const responsiveNavbar = () => {
   const navBar = document.getElementById("main-menu");
   (navBar.className === "main-menu")
