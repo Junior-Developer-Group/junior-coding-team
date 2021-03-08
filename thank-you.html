@@ -66,6 +66,13 @@
       </section>
     </footer>
   </body>
-  <script></script>
+  <script>
+    // Make navBar Sticky
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('.main-menu');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+  </script>
+
   <script src="./assets/scripts/thankYou.js"></script>
 </html>
