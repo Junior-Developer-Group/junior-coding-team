@@ -90,7 +90,6 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-
 //Responsive navbar
 const responsiveNavbar = () => {
     const navBar = document.getElementById("main-menu");
@@ -100,6 +99,8 @@ const responsiveNavbar = () => {
         :
         navBar.className = "main-menu";
 }
+document.getElementById("icon").addEventListener("click", responsiveNavbar);
+
 
 //"Join us" modal pop up open and close
 let modal = document.querySelector(".modal")
