@@ -140,6 +140,36 @@ main p {
 .purpose-title {
   width: 100%;
 } 
+.purpose-paragraph  p{
+ font-size: 1.2em;
+}
+
+
+/* ABOUT US */
+
+.about-us {
+  margin-top: 2em;
+}
+
+summary {
+  font-size: 1.2em;
+  outline: none;
+}
+
+summary:focus,
+summary:focus::-webkit-details-marker {
+  color:var(--green);
+}
+
+details {
+  padding: 1em;
+}
+
+details p {
+  margin: 10px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
 
 /* projects section */
 
@@ -181,11 +211,14 @@ main p {
   max-height:18em;
  max-width:26em;
  border-radius:0.4em;
+ margin-top: 1em;
 
 }
 
-.sleep-quality p{
-  margin:1.5em 1.5em;
+.sleep-quality p,
+.tamagotchi p {
+  font-size: 1.2em;
+  margin-bottom: 2px;
 }
 
 .sleep-quality {
@@ -198,20 +231,18 @@ main p {
   height:100%;
   width: 100%;
   max-height:18em;
- max-width:26em;
- border-radius:0.4em;
+  max-width:26em;
+  border-radius:0.4em;
+  margin-top: 1em;
 
 }
 
-.tamagotchi{
+.tamagotchi {
   display:inline-block;
   margin:2em;
   text-align:center;
 }
-.tamagotchi p{
-  margin:1.5em 1.5em;
 
-}
 
 
 /* Team members h1 header */
