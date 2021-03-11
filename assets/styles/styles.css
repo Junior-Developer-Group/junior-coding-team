@@ -354,7 +354,13 @@ footer h1 {
   font-weight: 600;
 }
 
-.footer-links,
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
 .copyright {
   display: flex;
   justify-content: center;
@@ -362,33 +368,46 @@ footer h1 {
   text-align: center;
 }
 
-.footer-links section,
-.copyright {
+.footer-links section {
   margin: 1em;
   padding: 0.5em;
   line-height: 1.5em;
+  width: 15%;
 }
 
 #team a,
-footer section a,
-.copyright a {
+footer section a {
   color: var(--white);
   font-size: 1em;
   text-decoration: none;
   transition-duration: 0.4s;
 }
 
-footer section a:hover,
-.copyright a:hover {
+footer section a:hover {
   font-size: 1.1em;
   color: var(--blue);
 }
 
-footer section a:visited,
-.copyright a:visited {
+footer section a:visited {
   font-size: 1.1em;
   color: var(--blue);
 }
+
+.copyright {
+  margin: 1em;
+  padding: 0.5em;
+  line-height: 1.7em;
+}
+.copyright a {
+  color: var(--white);
+}
+.copyright a:hover {
+  color: var(--blue);
+}
+.copyright a:visited {
+  color: var(--blue);
+}
+
 /* Special thank you page */
 
 #thanks-container,
