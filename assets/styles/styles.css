@@ -375,6 +375,7 @@ footer h1 {
   width: 15%;
 }
 
+
 #team a,
 footer section a {
   color: var(--white);
@@ -564,6 +565,13 @@ footer section a:visited {
   }
   .footer-links {
     display: block;
+  }
+  .footer-links section {
+    width: 100%;
+  }
+
+  .copyright {
+    font-size: 0.7em;
   }
 }
 
