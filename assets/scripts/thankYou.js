@@ -33,6 +33,24 @@ const sources = [
         resourceLink: 'https://www.svgbackgrounds.com/#pattern-randomized'
       }
     ]
+  },
+  {
+    organisationName: 'Font Awesome',
+    organisationSite: 'https://fontawesome.com/',
+    description:
+      'has a number of vector icons and social logos, under an Open source license  CC BY 4.0 ,SIL OFL 1.1, and MIT licenses.',
+    image: {
+      url:
+        '',
+      alt: ''
+    },
+    resourcesUsed: [
+      {
+        resourceName: 'Social Media logos and Free icons',
+        resourceAuthor: 'FontAwesome',
+        resourceLink: 'https://fontawesome.com/'
+      }
+    ]
   }
 ];
 
@@ -92,4 +110,40 @@ sources.forEach((source) => {
 
   article.appendChild(thanksText);
   thanksContainer.appendChild(article);
+});
+
+
+
+//Responsive navbar
+const responsiveNavbar = () => {
+  const navBar = document.getElementById("main-menu");
+  (navBar.className === "main-menu")
+    ?
+    navBar.className += " responsive"
+    :
+    navBar.className = "main-menu";
+}
+document.getElementById("icon").addEventListener("click", responsiveNavbar);
+
+//"Join us" modal pop up open and close
+let modal = document.querySelector(".modal")
+document.getElementById("modal-link").addEventListener("click", () => {
+  modal.style.display = "block"
+})
+
+document.querySelector(".close").addEventListener("click", () => {
+  modal.style.display = "none"
+})
+
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none"
+  }
+});
+
+
+// Use scrollY effect
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('.main-menu');
+  header.classList.toggle('sticky', window.scrollY > 0);
 });
