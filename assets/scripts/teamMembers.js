@@ -53,6 +53,18 @@ const Member = [
             facebook: "https://www.facebook.com/urielofir86/",
             linkedin: "https://www.linkedin.com/in/uriel-ofir/"
         }
+    },
+    {
+        about:
+            "I’m a junior developer currently working with JavaScript and React. I love making things look beautiful",
+        name: "Francesca",
+        speciality: "Front-End Developer",
+        image: "https://avatars.githubusercontent.com/u/46782373?s=400&u=1bb0e2a85f9e2d60f252810b39ffc000671839cf&v=4",
+        social_links: {
+            github: "https://github.com/frannyfra",
+            linkedin: "https://www.linkedin.com/in/frannyfra/"
+        },
+        contact: "http://francesca-de-laurentis.com/"
     }
 ];
 
