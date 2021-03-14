@@ -30,16 +30,16 @@ const Member = [
         name: "Lizard",
         speciality: "Front-end development, designing for accessibility",
         image: "https://idealkoala.files.wordpress.com/2021/01/img-1064-copy.jpg",
-        social_links: {github: "https://github.com/onlyasmalllizard"},
+        social_links: { github: "https://github.com/onlyasmalllizard" },
 
     },
     {
         about:
-            "I’m an aspiring Junior Dev, mainly self taught. Currently working on building my skills.",
+            "I’m a Junior developer, working with Javascript, Node and Express",
         name: "Denice",
         speciality: "Junior developer",
         image: "https://github.com/Denice-S.png",
-        social_links: {github: "https://github.com/Denice-S", linkedin: "https://linkedin.com/in/denice-soper"},
+        social_links: { github: "https://github.com/Denice-S", linkedin: "https://linkedin.com/in/denice-soper" },
         contact: "",
     },
     {
