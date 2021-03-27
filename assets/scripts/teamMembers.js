@@ -65,6 +65,22 @@ const Member = [
             linkedin: "https://www.linkedin.com/in/frannyfra/"
         },
         contact: "http://francesca-de-laurentis.com/"
+    },
+    {
+        about:
+            "I’m a junior dev with a couple of freelance experience. I serve as a web developer in the non-profit religious organisation I belong to and I code with javascript, python and solidity for smart contracts. I also run a local community (southern code) in Nigeria, teaching youths to become programmers.",
+        name: "Oghenekparobo",
+        speciality: "Software Developer",
+        image: "https://avatars.githubusercontent.com/u/68813273?v=4",
+        social_links: {
+            github: "https://github.com/Jaytru1997",
+            instagram: "https://instagram.com/an_onosemuode?igshid=1r6teffyhnmdm",
+            twitter: "https://twitter.com/IAM_JoelZamani?s=08",
+            linkedin: "https://www.linkedin.com/in/oghenekparobo-o-997a6b17b",
+            facebook: "https://www.facebook.com/oghenekparobo.onosemuode",
+            medium: "https://medium.com/@kparoboj"
+        },
+        contact: "https://lesoustechnology.com/"
     }
 ];
 
@@ -85,6 +101,7 @@ for (members of Member) {
                     ${members.social_links.facebook ? `<span><a href= "${members.social_links.facebook}"<i class="fab fa-facebook fa-2x"></i></a></span>` : ''}                    
                     ${members.social_links.twitter ? `<span><a href= "${members.social_links.twitter}"<i class="fab fa-twitter fa-2x"></i></a></span>` : ''}
                     ${members.social_links.linkedin ? `<span><a href= "${members.social_links.linkedin}"<i class="fab fa-linkedin fa-2x"></i></a></span>` : ''}
+                    ${members.social_links.medium ? `<span><a href= "${members.social_links.medium}"<i class="fab fa-medium fa-2x"></i></a></span>` : ''}
                     </div>
                   <div class="contact-team-member">
                   ${members.contact ? `<a href="${members.contact}"> Visit Website 🖱️ </a` : ''}
