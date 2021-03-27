@@ -65,6 +65,21 @@ const Member = [
             linkedin: "https://www.linkedin.com/in/frannyfra/"
         },
         contact: "http://francesca-de-laurentis.com/"
+    },
+    {
+        about:
+            "I’m a junior software dev, serving in a non-profit religious organisation coding with js, python and solidity. I run a local community (southern code) in Nigeria, teaching programming.",
+        name: "Oghenekparobo",
+        speciality: "Software Developer",
+        image: "https://avatars.githubusercontent.com/u/68813273?v=4",
+        social_links: {
+            github: "https://github.com/Jaytru1997",
+            instagram: "https://instagram.com/an_onosemuode?igshid=1r6teffyhnmdm",
+            twitter: "https://twitter.com/IAM_JoelZamani?s=08",
+            linkedin: "https://www.linkedin.com/in/oghenekparobo-o-997a6b17b",
+            facebook: "https://www.facebook.com/oghenekparobo.onosemuode"
+        },
+        contact: "https://lesoustechnology.com/"
     }
 ];
 
