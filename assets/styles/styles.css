@@ -380,9 +380,9 @@ footer {
 footer h1 {
   margin-bottom: 0.6em;
   border-bottom: 1px var(--green) solid;
-
   font-size: 1.2em;
   font-weight: 600;
+  height:3em;
 }
 
 .footer-links {
