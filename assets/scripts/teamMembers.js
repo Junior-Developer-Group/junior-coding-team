@@ -81,6 +81,7 @@ const Member = [
         },
         contact: "https://lesoustechnology.com/"
     },
+    
     {
         about:
             "I’m a junior developer and blogger, currently working with CSS and being active in the developer community.",
