@@ -80,6 +80,19 @@ const Member = [
             facebook: "https://www.facebook.com/oghenekparobo.onosemuode"
         },
         contact: "https://lesoustechnology.com/"
+    },
+    {
+        about:
+            "I’m a junior developer and blogger, currently working with CSS and being active in the developer community.",
+        name: "Debra-Kaye",
+        speciality: "Front End Developer",
+        image: "https://avatars.githubusercontent.com/u/78452433?s=400&u=e43064cf61cc09e9c3e93a943373d35b4cd02bc1&v=4",
+        social_links: {
+            github: "https://github.com/debrakayeelliott",
+            linkedin: "https://www.linkedin.com/in/debrakayeelliott/",
+            twitter: "https://twitter.com/debrakayelliott",
+        },
+        contact: "https://bit.ly/debrakaye"
     }
 ];
 
