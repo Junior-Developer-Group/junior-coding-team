@@ -14,144 +14,6 @@
   --light-grey: rgba(0, 0, 0, 0.2);
   --dark-grey: #363636;
   --very-light-grey:rgb(109, 108, 108);
-  --azure:	#F0FFFF;
-  --mintcream:	#F5FFFA;
-  --snow:	#FFFAFA;
-  --ivory:	#FFFFF0;
-  --ghostwhite:	#F8F8FF;	
-  --floralwhite:	#FFFAF0;
-  --aliceblue:	#F0F8FF;
-  --lightcyan:	#E0FFFF;	
-  --honeydew:	#F0FFF0;	
-  --lightyellow:	#FFFFE0;	
-  --seashell:	#FFF5EE;	
-  --lavenderblush:	#FFF0F5;
-  --whitesmoke:	#F5F5F5;
-  --oldlace:	#FDF5E6;
-  --cornsilk:	#FFF8DC;	
-  --linen:	#FAF0E6;
-  --lightgoldenrodyellow:	#FAFAD2;
-  --lemonchiffon:	#FFFACD;	
-  --beige:	#F5F5DC;
-  --lavender:	#E6E6FA;
-  --papayawhip:	#FFEFD5;
-  --mistyrose:	#FFE4E1;
-  --antiquewhite:	#FAEBD7;
-  --blanchedalmond:	#FFEBCD;
-  --bisque:	#FFE4C4;
-  --paleturquoise:	#AFEEEE;	
-  --moccasin:	#FFE4B5;
-  --gainsboro:	#DCDCDC;
-  --peachpuff:	#FFDAB9;
-  --navajowhite:	#FFDEAD;
-  --palegoldenrod:	#EEE8AA;
-  --wheat:	#F5DEB3;
-  --powderblue:	#B0E0E6;
-  --aquamarine:	#7FFFD4;
-  --lightgrey:	#D3D3D3;
-  --hexpink:	#FFC0CB;
-  --lightblue:	#ADD8E6;
-  --thistle:	#D8BFD8;
-  --lightpink:	#FFB6C1;
-  --lightskyblue:	#87CEFA;
-  --palegreen:	#98FB98;
-  --lightsteelblue:	#B0C4DE;
-  --khaki:	#F0D58C;
-  --skyblue:	#87CEEB;
-  --aqua:	#00FFFF;
-  --cyan:	#00FFFF;
-  --silver:	#C0C0C0;
-  --plum:	#DDA0DD;
-  --gray:	#BEBEBE;
-  --lightgreen:	#90EE90;
-  --violet:	#EE82EE;
-  --yellow:	#FFFF00;
-  --turquoise:	#40E0D0;
-  --burlywood:	#DEB887;
-  --greenyellow:	#ADFF2F;
-  --tan:	#D2B48C;
-  --mediumturquoise:	#48D1CC;
-  --lightsalmon:	#FFA07A;
-  --mediumaquamarine:	#66CDAA;
-  --darkgray:	#A9A9A9;
-  --orchid:	#DA70D6;
-  --darkseagreen:	#8FBC8F;
-  --deepskyblue:	#00BFFF;
-  --sandybrown:	#F4A460;
-  --gold:	#FFD700;
-  --mediumspringgreen:	#00FA9A;
-  --darkkhaki:	#BDB76B;
-  --cornflowerblue:	#6495ED;
-  --hotpink:	#FF69B4;
-  --darksalmon:	#E9967A;
-  --darkturquoise:	#00CED1;
-  --springgreen:	#00FF7F;
-  --lightcoral:	#F08080;
-  --rosybrown:	#BC8F8F;
-  --salmon:	#FA8072;
-  --chartreuse:	#7FFF00;
-  --mediumpurple:	#9370DB;
-  --lawngreen:	#7CFC00;
-  --dodgerblue:	#1E90FF;
-  --yellowgreen:	#9ACD32;
-  --palevioletred:	#DB7093;
-  --mediumslateblue:	#7B68EE;
-  --mediumorchid:	#BA55D3;
-  --coral:	#FF7F50;
-  --cadetblue:	#5F9EA0;
-  --lightseagreen:	#20B2AA;
-  --goldenrod:	#DAA520;
-  --orange:	#FFA500;
-  --lightslategray:	#778899;
-  --fuchsia:	#FF00FF;
-  --magenta:	#FF00FF;
-  --mediumseagreen:	#3CB371;
-  --peru:	#CD853F;
-  --steelblue:	#4682B4;
-  --royalblue:	#4169E1;
-  --slategray:	#708090;
-  --tomato:	#FF6347;
-  --darkorange:	#FF8C00;
-  --slateblue:	#6A5ACD;
-  --limegreen:	#32CD32;
-  --lime:	#00FF00;
-  --indianred:	#CD5C5C;
-  --darkorchid:	#9932CC;
-  --blueviolet:	#8A2BE2;
-  --deeppink:	#FF1493;
-  --darkgoldenrod:	#B8860B;
-  --chocolate:	#D2691E;
-  --darkcyan:	#008B8B;
-  --dimgray:	#696969;
-  --olivedrab:	#6B8E23;
-  --seagreen:	#2E8B57;
-  --teal:	#008080;
-  --darkviolet:	#9400D3;
-  --mediumvioletred:	#C71585;
-  --orangered:	#FF4500;
-  --olive:	#808000;
-  --sienna:	#A0522D;
-  --darkslateblue:	#483D8B;
-  --darkolivegreen:	#556B2F;
-  --forestgreen:	#228B22;
-  --crimson:	#DC143C;
-  --hexblue:	#0000FF;
-  --darkmagenta:	#8B008B;
-  --darkslategray:	#2F4F4F;
-  --saddlebrown:	#8B4513;
-  --brown:	#A52A2A;
-  --firebrick:	#B22222;
-  --purple:	#800080;
-  --hexgreen:	#008000;
-  --red:	#FF0000;
-  --mediumblue:	#0000CD;
-  --indigo:	#4B0082;
-  --midnightblue:	#191970;
-  --darkgreen:	#006400;
-  --darkblue:	#00008B;
-  --navy:	#000080;
-  --darkred:	#8B0000;
-  --maroon:	#800000;
 }
 
 * {
@@ -201,8 +63,9 @@ main p {
 
 .main-menu.sticky {
   padding: 0.33em 6.25em;
-  background: var(--white);
+  background: var(--black);
   box-shadow: 0 0.5em 1em var(--black);
+  position: fixed;
 }
 
 .main-menu.sticky ul li a {
@@ -275,11 +138,11 @@ main p {
 .purpose,
 .purpose-title {
   margin-bottom: 1.25em;
-} 
+}
 
 .purpose-title {
   width: 100%;
-} 
+}
 .purpose-paragraph  p{
  font-size: 1.2em;
 }
@@ -329,7 +192,7 @@ details p {
   width: 90%;
   font-size: 1.8em;
   line-height: 2em;
-  
+
 }
 .projects--title h1{
   border-bottom: 1px var(--green) solid;
@@ -390,8 +253,8 @@ details p {
 .team-header{
   margin:1.5em 1.5em;
   text-align:center;
-  
-} 
+
+}
 .team-header h1{
   display:inline-block;
   font-size: 3.4em;
@@ -413,7 +276,7 @@ details p {
   color: var(--white);
   font-size: 1.1em;
   line-height: 1.2em;
-  
+
 }
 .team-card {
   text-align:center;
@@ -422,10 +285,10 @@ details p {
   max-width: 100%;
   margin-bottom: 1.25em;
   width: 18.75rem;
-  height: 31.25rem; 
+  height: 31.25rem;
   border: 0.06em solid var(--light-grey);
   overflow: hidden;
-  perspective:62.5em; 
+  perspective:62.5em;
   transition: background-color 0.5s ease;
   border-radius:0.62em;
 }
@@ -760,15 +623,15 @@ footer section a:visited {
 /* Styles for the modal pop on "Join Us" on the navbar"*/
 .modal {
   display: none;
-  position: fixed; 
+  position: fixed;
   padding-top:3em;
-  left: 0; 
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow:auto;
-  background-color: var(--pure-black); 
-  background-color: var(--opaque-black); 
+  background-color: var(--pure-black);
+  background-color: var(--opaque-black);
 
 }
 .modal-content {
@@ -778,20 +641,20 @@ footer section a:visited {
   border-radius:0.3em;
   text-align:center;
   background-color:var(--very-light-grey);
-  padding: 1.5em; 
-  margin: auto; 
+  padding: 1.5em;
+  margin: auto;
   width:50%;
 }
 .modal-content h2{
   width:100%;
   text-align:center;
-  
+
 }
 
 .modal-content span{
   width:100%;
   margin-left:94%;
-  
+
 }
 .modal-content p{
   margin:1.8em 0.8em;
@@ -808,7 +671,7 @@ footer section a:visited {
   font-size:0.7em;
   border-radius: 0.3em;
   border:0.1em solid var(--green);
-  
+
 }
 .modal-content a{
   text-decoration:none;
@@ -822,11 +685,8 @@ footer section a:visited {
 }
 .close {
   width:50%;
-  color: var(--green); 
-  font-size: 2em;  
+  color: var(--green);
+  font-size: 2em;
   font-weight: bold;
   cursor: pointer;
 }
-
-
-
