@@ -18,7 +18,7 @@ At the moment the idea is to use your regular HTML/CSS/JS and build up education
 
 At the moment we're using a discord server. As we grow I'd like to switch to a different platform but we will decide as a group when the time comes. For now you can join us by visiting this invite link here: https://discord.com/invite/HgFaYYADRC
 
-## Current Projects - Team Page / Sleep Calculator / Tamagotchi Browser Game / CAT Match
+## Current Projects - Team Page / Sleep Calculator / Tamagotchi Browser Game / CAT Match /
 
 Team Page - Team Page is the very first project started by our Junior Developer Group, hosted on GitHub Pages. This is a current homepage and information hub owned by Junior Coding Team members.
 
