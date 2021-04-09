@@ -4,6 +4,7 @@
   --pure-white: #ffff;
   --white: #f5f5f5;
   --pure-black: #000000;
+  --opaque-black: rgba(0,0,0,0.6);
   --black: #171717;
   --dark-purple: #392f5a;
   --blue: #03a9f4;
@@ -766,8 +767,8 @@ footer section a:visited {
   width: 100%;
   height: 100%;
   overflow:auto;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.6); 
+  background-color: var(--pure-black); 
+  background-color: var(--opaque-black); 
 
 }
 .modal-content {
