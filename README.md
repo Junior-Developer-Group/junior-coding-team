@@ -16,7 +16,9 @@ At the moment the idea is to use your regular HTML/CSS/JS and build up education
 
 ## Main place we use to chat and vote:
 
-At the moment we're using a discord server. As we grow I'd like to switch to a different platform but we will decide as a group when the time comes. For now you can join us by visiting this invite link here: https://discord.com/invite/HgFaYYADRC
+Our main communication tool is WONDR platform. This is where we keep all our documents and important information, meeting summaries, tutorials and guides. WONDR Messenger is what we use to chat, ask questions and keep up with other team members. You can use it in the browser or you can download an app to your phone. You can join us by visiting this invite link here: https://mywondr.co/profile/view/cdd60d10-7ac3-11eb-b163-1fd52740df0d/?invite=1
+
+In the past we used to use discord as our main communication tool but since our switch to WONDR we’ve removed duplicated channels and only use Discord for audio/video/screen sharing meetings. One of those is our Friday Focus Session which happens every Friday at 7PM UK time and is advertised on WONDR as an event - which you can save to your calendars. You can join us by visiting this invite link here: https://discord.com/invite/HgFaYYADRC
 
 ## Current Project - TBD
 
