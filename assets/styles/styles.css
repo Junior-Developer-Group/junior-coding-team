@@ -52,9 +52,7 @@ main p {
   width: 90%;
   z-index: 100;
 
-  transition: 0.6s;
-
-  margin: 2.5em auto;
+  margin: 0em auto;
 }
 
 .main-menu a.icon {
@@ -62,14 +60,19 @@ main p {
 }
 
 .main-menu.sticky {
-  padding: 0.33em 6.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  z-index: 100;
   background: var(--black);
-  box-shadow: 0 0.5em 1em var(--black);
   position: fixed;
 }
 
 .main-menu.sticky ul li a {
-  color: var(--black);
+  color: var(--white);
 }
 
 .main-menu ul {
