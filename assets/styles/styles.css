@@ -107,6 +107,8 @@ main p {
 .team-logo {
   width: 5.33em;
   height: 5.33em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Introduction section */
