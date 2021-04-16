@@ -51,6 +51,23 @@ const sources = [
         resourceLink: 'https://fontawesome.com/'
       }
     ]
+  },
+
+  {
+    organisationName: 'Junior Developers Group',
+    organisationSite: 'https:',
+    description: 'team responsible for the development of the Junior Developers Group Team Page, an open source project.',
+    image: {
+      url: 'https://uploads.mywondr.co/user/e408a1bfeabb52be43ad412d3799c3e1_cover.png?version=1614626951',
+      alt: 'Junior Developers Group'
+    },
+    resourcesUsed: [
+      {
+        resourceName: 'Junior Developers Group Members',
+        resourceAuthor: 'Likii',
+        resourceLink: 'https://mywondr.co/profile/view/cdd60d10-7ac3-11eb-b163-1fd52740df0d/?invite=1'
+      }
+    ]
   }
 ];
 
