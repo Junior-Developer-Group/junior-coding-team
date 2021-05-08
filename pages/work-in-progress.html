@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page that is coming soon!" />
+    <meta name="robots" content="nofollow" />
+
+    <style type="text/css" scoped>
+        .content-container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 55vh;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content-container>.content-box {
+            max-height: 30vh;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content-box>h4 {
+            width: 50%;
+        }
+
+        .text-light {
+            color: grey;
+        }
+
+        links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 50vw;
+            margin-top: 2em;
+        }
+
+        links>button {
+            width: 20%;
+            margin-top: 4em;
+            padding: .75em;
+            margin: 1em;
+            background: rgb(37, 117, 252);
+            color: whitesmoke;
+            align-content: center;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            border: none;
+        }
+
+        links>button:hover {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            background-color: rgb(58, 128, 250);
+        }
+
+        @media (max-width: 800px) {
+            .content-container {
+                height: 50vh
+            }
+
+            links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            links>button {
+                width: 100%;
+            }
+
+            .content-box>h4 {
+                width: 85%;
+                
+            }
+        }
+    </style>
+
+    <title>Junior Developer Group</title>
+</head>
+
+<body>
+    <!--Main Section-->
+    <main class='content-container'>
+        <content class='content-box'>
+            <h1>You've stumbled across a work in progress!</h1>
+            <h4 class='text-light'><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nibh
+                    lobortis, volutpat mauris vel,
+                    sodales urna. Morbi non interdum est, et vulputate nisl. Proin venenatis dictum tempus. Ut
+                    scelerisque
+                    nibh sit amet ipsum vestibulum gravida.</i></h4>
+            <div style='height: 300px'>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_dVjyU3.json" background="transparent"
+                    speed="1" style="min-width: 240px; width: 50vw; " loop autoplay>
+                </lottie-player>
+            </div>
+            <links>
+                <button onclick="window.location.href='/index.html'">Homepage</button>
+                <button
+                onclick="window.open('https://mywondr.co/profile/view/cdd60d10-7ac3-11eb-b163-1fd52740df0d/?invite=1')">
+                    Join us on WONDR
+                </button>
+                <button onclick="window.open('https://discord.gg/HgFaYYADRC')">Visit our discord channel</button>
+            </links>
+        </content>
+    </main>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type='text/javascript' src='../assets/scripts/joinus.js'>
+        
+    </script>
+</body>
+
+</html>

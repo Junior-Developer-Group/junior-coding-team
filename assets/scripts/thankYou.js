@@ -93,7 +93,6 @@ sources.forEach((source) => {
   let orgLink = document.createElement('a');
   orgLink.href = source.organisationSite;
   orgLink.innerText = source.organisationName;
-  console.log(orgLink);
 
   let description = document.createElement('p');
   description.appendChild(orgLink);
