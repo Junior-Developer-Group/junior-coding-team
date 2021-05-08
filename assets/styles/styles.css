@@ -450,6 +450,30 @@ footer section a:visited {
 
 /* Special thank you page */
 
+
+.thanks-wrapper,
+.thanks-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.thanks{
+  width: 90%;
+  padding: 2.5em;
+  background-color: var(--dark-grey);
+}
+
+.thanks-title{
+  font-size: 2.8em;
+  font-weight: 200;
+  line-height: 2em;
+
+  margin-bottom: 0.5em;
+  border-bottom: 1px var(--green) solid;
+}
+
+
 #thanks-container,
 .thanks-card {
   display: flex;
@@ -562,7 +586,7 @@ footer section a:visited {
 
 /* Medium devices - 960px */
 @media only screen and (max-width: 61.25em) {
-  .introduction--title {
+  .introduction--title, .thanks-title {
     font-size: 1.6em;
   }
 
@@ -616,6 +640,29 @@ footer section a:visited {
 
 /* Extra-large devices */
 @media only screen and (min-width: 81.25em) {
+
+  #thanks-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+
+  #thanks-container h1 {
+    align-self: center;
+    grid-column: 1/ span 3;
+  }
+
+  .thanks-card {
+    grid-column: span 1;
+  }
+
+  .thanks-card img {
+    max-width: 100%;
+  }
+
+
   footer {
     justify-content: center;
   }
