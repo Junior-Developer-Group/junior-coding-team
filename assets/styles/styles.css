@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 :root {
   --pure-white: #ffff;
@@ -165,7 +165,7 @@ summary {
 }
 
 summary:focus,
-summary:focus::-webkit-details-marker {
+summary:focus::marker {
   color:var(--green);
 }
 
@@ -214,8 +214,6 @@ details p {
 }
 
 .sleep-quality img{
-  height:100%;
-  width: 100%;
   max-height:18em;
  max-width:26em;
  border-radius:0.4em;
@@ -236,8 +234,6 @@ details p {
 }
 
 .tamagotchi img{
-  height:100%;
-  width: 100%;
   max-height:18em;
   max-width:26em;
   border-radius:0.4em;
@@ -410,7 +406,7 @@ footer h1 {
 .footer-links section {
   margin: 1em;
   padding: 0.5em;
-  line-height: 1.5em;
+  line-height: 2em;
   width: 15%;
 }
 

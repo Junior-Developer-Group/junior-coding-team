@@ -1,4 +1,4 @@
-const Member = [
+const Member=[
     {
         about:
             "I’m a junior dev with a couple of years of experience. I’m currently working with Vue, blogging and running a junior developer community. ",
@@ -97,64 +97,64 @@ const Member = [
 ];
 
 for (members of Member) {
-    const team_member = `
+    const team_member=`
                 <div class="team-card">
                     <p>
                     ${members.about}
                     </p>
                     <div class="image-wrapper">
-                    <img src=${members.image} />
+                    <img src=${members.image} alt="members profile image"/>
                     </div>
                     <div class="details">
                     <h2>${members.name}<br /><span> ${members.speciality} </span></h2>
                     <div class="social_links">
-                    ${members.social_links.github ? `<span><a href= "${members.social_links.github}"<i class="fab fa-github fa-2x"></i></a></span>` : ''}
-                    ${members.social_links.instagram ? `<span><a href= "${members.social_links.instagram}"<i class="fab fa-instagram fa-2x"></i></a></span>` : ''}
-                    ${members.social_links.facebook ? `<span><a href= "${members.social_links.facebook}"<i class="fab fa-facebook fa-2x"></i></a></span>` : ''}                    
-                    ${members.social_links.twitter ? `<span><a href= "${members.social_links.twitter}"<i class="fab fa-twitter fa-2x"></i></a></span>` : ''}
-                    ${members.social_links.linkedin ? `<span><a href= "${members.social_links.linkedin}"<i class="fab fa-linkedin fa-2x"></i></a></span>` : ''}
+                    ${members.social_links.github? `<span><a href= "${members.social_links.github}" aria-label="github"<i class="fab fa-github fa-2x"></i></a></span>`:''}
+                    ${members.social_links.instagram? `<span><a href= "${members.social_links.instagram}" aria-label="instagram"<i class="fab fa-instagram fa-2x"></i></a></span>`:''}
+                    ${members.social_links.facebook? `<span><a href= "${members.social_links.facebook}"aria-label="facebook" <i class="fab fa-facebook fa-2x"></i></a></span>`:''}                    
+                    ${members.social_links.twitter? `<span><a href= "${members.social_links.twitter}"aria-label="Twitter"<i class="fab fa-twitter fa-2x"></i></a></span>`:''}
+                    ${members.social_links.linkedin? `<span><a href= "${members.social_links.linkedin}"aria-label="linkedin"<i class="fab fa-linkedin fa-2x"></i></a></span>`:''}
                     </div>
                   <div class="contact-team-member">
-                  ${members.contact ? `<a href="${members.contact}"> Visit Website 🖱️ </a` : ''}
+                  ${members.contact? `<a href="${members.contact}"> Visit Website 🖱️ </a`:''}
                   </div>
     </div>
 `;
 
-    document.querySelector(".team-card-wrapper").innerHTML += team_member;
+    document.querySelector(".team-card-wrapper").innerHTML+=team_member;
 }
 ;
 
 // Use scrollY effect
 window.addEventListener("scroll", function () {
-    var header = document.querySelector(".main-menu");
-    header.classList.toggle("sticky", window.scrollY > 0);
+    var header=document.querySelector(".main-menu");
+    header.classList.toggle("sticky", window.scrollY>0);
 });
 
 //Responsive navbar
-const responsiveNavbar = () => {
-    const navBar = document.getElementById("main-menu");
-    (navBar.className === "main-menu")
+const responsiveNavbar=() => {
+    const navBar=document.getElementById("main-menu");
+    (navBar.className==="main-menu")
         ?
-        navBar.className += " responsive"
+        navBar.className+=" responsive"
         :
-        navBar.className = "main-menu";
+        navBar.className="main-menu";
 }
 document.getElementById("icon").addEventListener("click", responsiveNavbar);
 
 
 //"Join us" modal pop up open and close
-let modal = document.querySelector(".modal")
+let modal=document.querySelector(".modal")
 document.getElementById("modal-link").addEventListener("click", () => {
-    modal.style.display = "block"
+    modal.style.display="block"
 })
 
 document.querySelector(".close").addEventListener("click", () => {
-    modal.style.display = "none"
+    modal.style.display="none"
 })
 
 window.addEventListener("click", (e) => {
-    if (e.target == modal) {
-        modal.style.display = "none"
+    if (e.target==modal) {
+        modal.style.display="none"
     }
 });
 
