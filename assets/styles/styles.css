@@ -214,8 +214,6 @@ details p {
 }
 
 .sleep-quality img{
-  height:100%;
-  width: 100%;
   max-height:18em;
  max-width:26em;
  border-radius:0.4em;
@@ -236,8 +234,6 @@ details p {
 }
 
 .tamagotchi img{
-  height:100%;
-  width: 100%;
   max-height:18em;
   max-width:26em;
   border-radius:0.4em;
@@ -583,8 +579,6 @@ footer section a:visited {
     max-width: 75%;
   }
 
-<<<<<<< HEAD
-=======
   .sleep-quality img{
     max-height: 10em;
     max-width: 20em;
@@ -593,7 +587,6 @@ footer section a:visited {
     max-height: 10em;
     max-width: 20em;
   }
->>>>>>> main
 }
 
 /* Medium devices - 960px */
