@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 :root {
   --pure-white: #ffff;
@@ -165,7 +165,7 @@ summary {
 }
 
 summary:focus,
-summary:focus::-webkit-details-marker {
+summary:focus::marker {
   color:var(--green);
 }
 
@@ -410,7 +410,7 @@ footer h1 {
 .footer-links section {
   margin: 1em;
   padding: 0.5em;
-  line-height: 1.5em;
+  line-height: 2em;
   width: 15%;
 }
 
@@ -582,6 +582,7 @@ footer section a:visited {
   .main-menu img {
     max-width: 75%;
   }
+
 }
 
 /* Medium devices - 960px */
