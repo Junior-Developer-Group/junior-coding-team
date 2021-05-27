@@ -558,6 +558,15 @@ footer section a:visited {
   .main-menu img {
     max-width: 75%;
   }
+
+  .sleep-quality img{
+    max-height: 10em;
+    max-width: 20em;
+  }
+  .tamagotchi img{
+    max-height: 10em;
+    max-width: 20em;
+  }
 }
 
 /* Medium devices - 960px */
