@@ -93,6 +93,16 @@ const Member=[
             twitter: "https://twitter.com/debrakayelliott",
         },
         contact: "https://bit.ly/debrakaye"
+    },
+    {
+        about:
+            "I'm a junior developer from New Orleans, Louisiana, currently learning HTML and CSS among other things.",
+        name: "John",
+        speciality: "Front-End Developer",
+        image: "https://avatars.githubusercontent.com/u/84462084?v=4",
+        social_links: {
+            github: "https://github.com/john-fowle/",
+        },
     }
 ];
 
