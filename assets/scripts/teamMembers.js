@@ -117,6 +117,17 @@ const Member = [
       github: "https://github.com/Alegarciy",
     },
   },
+  {
+    about:,
+    name: "Jeff 👋",
+    speciality: "Front End Development / JavaScript All the Things",
+    image: "https://avatars.githubusercontent.com/J3ffJessie" ,
+    social_links: {
+      github: "https://github.com/J3ffJessie",
+      linkedin: "https://www.linkedin.com/in/j3ffjessie",
+      twitter: "https://www.twitter.com/j3ffjessie",
+    }
+  },
 ];
 
 for (members of Member) {
