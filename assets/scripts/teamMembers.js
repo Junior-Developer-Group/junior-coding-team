@@ -118,7 +118,7 @@ const Member = [
     },
   },
   {
-    about:,
+    about: " I am a Junior Front End Developer from Tennessee, currently working through React and TypeScript",
     name: "Jeff 👋",
     speciality: "Front End Development / JavaScript All the Things",
     image: "https://avatars.githubusercontent.com/J3ffJessie" ,
