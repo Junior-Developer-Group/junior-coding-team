@@ -20,23 +20,24 @@ Our main communication tool is WONDR platform. This is where we keep all our doc
 
 In the past we used to use discord as our main communication tool but since our switch to WONDR we’ve removed duplicated channels and only use Discord for audio/video/screen sharing meetings. One of those is our Friday Focus Session which happens every Friday at 7PM UK time and is advertised on WONDR as an event - which you can save to your calendars. You can join us by visiting this invite link here: https://discord.com/invite/HgFaYYADRC
 
-## Current Projects - Team Page / Sleep Calculator / Tamagotchi Browser Game / CAT Match /
+## Current Projects - Team Page / Sleep Calculator / Palmadillo Browser Game / CAT Match /
 
 Team Page - Team Page is the very first project started by our Junior Developer Group, hosted on GitHub Pages. This is a current homepage and information hub owned by Junior Coding Team members.
 
 Sleep Calculator - Sleep Quality Calculator is the second project started by our Junior Developer Group, hosted on GitHub Pages. 'Sleep Quality Calculator' is an open source project using vanilla HTML, CSS and JavaScript for the time being. Learn about the benefits and side effects of poor sleep quality, calculate your own sleep quality score and share additional resources where one can find help or further answers.
 
-Tamagotchi Browser Game - This is a first browser game developed by Junior Developer Group. As the name says, the game is inspired by Tamagotchi mechanics but it focuses on bringing awareness to an endangered animal, Pink Fairy Armadillo - the star of our project.
+Palmadillo Browser Game - This is a first browser game developed by Junior Developer Group. As the name says, the game is inspired by Tamagotchi mechanics but it focuses on bringing awareness to an endangered animal, Pink Fairy Armadillo - the star of our project.
 
 CAT Match - Our first project using an API which returns information on different cat breeds. The idea is to help you find your perfect cat breed using the cat API and Matchbox API
 
 ## Tools used
 
-- Ticket creation to completion -> [Trello](https://trello.com/invite/b/s08Xvzif/7ba765c506c36284e83aa7d9bc3e19a7/junior-developer-group-task-board)
 - Ticket creation to completion -> [Jira](https://bit.ly/3aS157t)
-- Design tools -> Figma/AdobeSuite (TBD)
+- Design tools -> Figma/AdobeSuite
 - File Storage -> GoogleDocs
-- Hosting -> GitHub
+- Hosting -> GitHub Pages
+- Communication -> [WONDR](https://mywondr.co/profile/view/cdd60d10-7ac3-11eb-b163-1fd52740df0d/?invite=1)
+
 
 #### Contact:
 
