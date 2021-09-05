@@ -118,15 +118,28 @@ const Member = [
     },
   },
   {
-    about: " I am a Junior Front End Developer from Tennessee, currently working through React and TypeScript",
+    about:
+      " I am a Junior Front End Developer from Tennessee, currently working through React and TypeScript",
     name: "Jeff 👋",
     speciality: "Front End Development / JavaScript All the Things",
-    image: "https://avatars.githubusercontent.com/J3ffJessie" ,
+    image: "https://avatars.githubusercontent.com/J3ffJessie",
     social_links: {
       github: "https://github.com/J3ffJessie",
       linkedin: "https://www.linkedin.com/in/j3ffjessie",
       twitter: "https://www.twitter.com/j3ffjessie",
-    }
+    },
+  },
+  {
+    about:
+      "Software Developer working with Java, Spring, Vaadin and JavaScript on both personal and open-source projects",
+    name: "Alex",
+    speciality: "Software Developer",
+    image: "https://avatars.githubusercontent.com/aleksandar-trifunovic",
+    social_links: {
+      github: "https://github.com/aleksandar-trifunovic",
+      linkedin: "https://www.linkedin.com/in/aleksandar-trifunovic-rs/",
+      twitter: "https://twitter.com/alex_javadev",
+    },
   },
 ];
 
