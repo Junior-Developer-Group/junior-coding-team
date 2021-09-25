@@ -141,6 +141,17 @@ const Member = [
       twitter: "https://twitter.com/alex_javadev",
     },
   },
+  {
+    about:
+      "I'm a Junior Software Developer from Nottingham, currently working with C#, .Net Core and Angular",
+    name: "Ruman",
+    speciality: "Software Developer",
+    image: "https://avatars.githubusercontent.com/loop-infinity",
+    social_links: {
+      github: "https://github.com/loop-infinity",
+      linkedin: "https://www.linkedin.com/in/ruman-mulla",
+    },
+  },
 ];
 
 for (members of Member) {
