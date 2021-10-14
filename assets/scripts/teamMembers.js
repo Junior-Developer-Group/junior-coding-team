@@ -152,6 +152,21 @@ const Member = [
       linkedin: "https://www.linkedin.com/in/ruman-mulla",
     },
   },
+  {
+    about:
+      "Junior React developer. Obsessed with video games (and streaming them), my furbaby Dermott (English Bulldog) and sushi.",
+    name: "Thomas",
+    speciality: "React Developer",
+    image:
+      "https://avatars.githubusercontent.com/fitzcodes",
+    social_links: {
+      github: "https://github.com/fitzcodes",
+      instagram: "https://www.instagram.com/fitzcodes/",
+      twitter: "https://twitter.com/fitzcodes",
+      linkedin: "https://www.linkedin.com/in/thomas-fitzgerald-fitzcodes/",
+    },
+    contact: "https://fitzcodes.github.io/",
+  },
 ];
 
 for (members of Member) {
