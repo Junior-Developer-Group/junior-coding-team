@@ -167,6 +167,18 @@ const Member = [
     },
     contact: "https://fitzcodes.github.io/",
   },
+  {
+		about:"I'm a Computer Science student from North Macedonia. Currently learning more about Javascript.",
+		name:"Angela",
+		specialty:"Front-end Developer",
+		image: "https://avatars.githubusercontent.com/u/41633886?v=4",
+		social_links: {
+			github: "https://github.com/codekoya",
+			linkedin: "https://www.linkedin.com/in/angela-nikolova-8a39601ab/",
+			codepen: "https://codepen.io/codekoya",
+		},
+	},
+
 ];
 
 for (members of Member) {
